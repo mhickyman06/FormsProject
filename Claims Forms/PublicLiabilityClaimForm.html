@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Styles/site.css">
+    <title>Public Liability Claim Form</title>
+</head>
+<body>
+    <div class="container risk_container">
+        <div class="risk_inner">
+            <form>
+                <div class="about">
+                    <p>The issue of this form is NOT an admission of liability on the part of the
+                        Company. Please answer all questions fully and return form without delay to<br>
+                        <span style="font-weight: 1000;">
+                            <bold>ALLIANZ NIGERIA INSURANCE PLC</bold>
+                        </span>
+                    </p>
+                    <hr>
+                </div>
+                <div class="insurediv mt-3">
+                    <div>
+                        <ol class="insureinputlist">
+                            <li>
+                                <label for="insuredname">Name of Insured</label>
+                                <input type="text" name="insuredname" id="insuredname">
+                            </li>
+                            <li>
+                                <label for="policyno">Policy No</label>
+                                <input type="text" name="policyno" id="policyno">
+                            </li>
+                            <li>
+                                <label for="address">Address</label>
+                                <input type="text" name="address" id="address">
+                            </li>
+                            <li>
+                                <label for="tellno">Tell No</label>
+                                <input type="text" name="tellno" id="tellno">
+                            </li>
+                            <li>
+                                <label for="occupation">Occupation or Business</label>
+                                <input type="text" name="occupation" id="occupation">
+                            </li>
+                        </ol>
+                        <ol>
+                            <h6>Contact Details</h6>
+                            <li>
+                                <label for="contactname">Name of Insured</label>
+                                <input type="text" name="contactname" id="contactname">
+                            </li>
+                            <li>
+                                <label for="contactposition">Position</label>
+                                <input type="text" name="contactposition" id="contactposition">
+                            </li>
+                            <li>
+                                <label for="contacttellno">Tell No</label>
+                                <input type="text" name="contacttellno" id="contacttellno">
+                            </li>
+                            <li>
+                                <label for="contactemail">Email</label>
+                                <input type="text" name="contactemail" id="contactemail">
+                            </li>
+                            <li>
+                                <label for="contactaddress">Address</label>
+                                <input type="text" name="contactaddress" id="contactaddress">
+                            </li>
+                            <li class="mt-3">
+                                <label for="contractundertakendetails">Describe the precise contract work undertaken at the time of the incident</label>
+                                <textarea type="text" name="contractundertakendetails" id="contractundertakendetails" style="width: 60%;"></textarea>
+                            </li>
+                        </ol>
+                        <ol>
+                            <h6>Liability</h6>
+                            <li>
+                                <label for="isliableforaccident">Do you feel you are liable for the accident</label>
+                                <select name="isliableforaccident" id="isliableforaccident">
+                                    <option value="" selected disabled>please select</option>
+                                    <option value="true">True</option>
+                                    <option value="false">False</option>
+                                </select>
+                                <label for="whoisliableandwhy">If not, please confirm who is liable and why</label>
+                                <textarea name="whoisliableandwhy" id="whoisliableandwhy" style="width: 60%;"></textarea>
+                            </li>
+                        </ol>
+                        <ol>
+                            <h6>Third Party/Claimant</h6>
+                            <li>
+                                <label for="claimantname">Name</label>
+                                <input type="text" name="claimantname" id="claimantname">
+                            </li>
+                            <li>
+                                <label for="claimantaddress">Address</label>
+                                <input type="text" name="claimantaddress" id="claimantaddress">
+                            </li>
+                            <li>
+                                <label for="claimantmobleno">Mobile Phone No</label>
+                                <input type="text" name="claimantmobleno" id="claimantmobleno">
+                            </li>
+                        </ol>
+                        <ol>
+                            <h6>Injury</h6>
+                            <li>
+                                <label for="injurysustained">What injuries was sustained</label>
+                                <input type="text" name="injurysustained" id="injurysustained">
+                            </li>
+                            <li>
+                                <label for="wheretreated">Where was third party treated</label>
+                                <input type="text" name="wheretreated" id="wheretreated">
+                            </li>
+                            <li>
+                                <label for="isthurdpartyretained">Was there third party retained in the hospital</label>
+                                <input type="text" name="isthurdpartyretained" id="isthurdpartyretained">
+                            </li>
+                        </ol>
+                        <ol>
+                            <h6>Property Damaged</h6>
+                            <li>
+                                <label for="propertydestroydescription">Please describe the property damaged</label>
+                                <textarea  type="text" name="propertydestroydescription" id="propertydestroydescription" style="width: 60%;"></textarea>
+                            </li>
+                            <li>
+                                <label for="propertyowner">Who owns the property</label>
+                                <input type="text" name="propertyowner" id="propertyowner">
+                            </li>
+                            <li>
+                                <label for="hasanyclaimmade">Has any claim be made on behalf of the third party either verbally or in writing</label>
+                                <select name="hasanyclaimmade" id="hasanyclaimmade">
+                                    <option value="" selected disabled>please select</option>
+                                    <option value="true">True</option>
+                                    <option value="false">False</option>
+                                </select>                            
+                            </li>
+                            <li>
+                                <label for="isclaimwrittenorverbal">Was the claim written or verbal</label>
+                                <select name="isclaimwrittenorverbal" id="isclaimwrittenorverbal">
+                                    <option value="" selected disabled>please select</option>
+                                    <option value="true">True</option>
+                                    <option value="false">False</option>
+                                </select>                              
+                             </li>
+                        </ol>
+                    </div>
+                    <hr>
+                    <div class="mt-5">
+                        <h6>Declaration</h6>
+                        <label for="declarantname"> I/We</label>
+                        <input type="text" name="declarantname" id="declarantname" class="nonoutlineinput" style="width: 60%;"><br>
+                        <label for="declarantposition">Position of the insured and on behalf and on behalf of 
+                            the insured declared above answers to be true and correct AND acknowledge that the insurer
+                            may make its decision on indemnity having regard to these answer
+                        </label>
+                        <input type="text" name="declarantposition" id="declarantposition" class="nonoutlineinput">
+                </div>
+                <div class="mt-5 row">
+                    <div class="col-sm-6">
+                        <label for="declarantsignature">Signature</label>
+                        <input type="file" name="declarantsignature" id="declarantsignature" >
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="signaturedate">Date</label>
+                        <input type="date" name="signaturedate" id="signaturedate" >
+                    </div>
+                </div>
+                <div class="mt-4" style="text-align: center;">
+                    <button id="submitinfo" name="submitinfo" type="submit" class="btn btn-sm btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

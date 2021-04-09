@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Styles/site.css">
+    <title>Motor Claim Form</title>
+    <style>
+        .insureinputlist ol{
+            list-style: lower-alpha;
+        }
+        .checkdiv{
+            margin-left: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container risk_container">
+        <div class="risk_inner">
+            <form>
+                <div class="about">
+                    <p>The issue of this form is NOT an admission of liability on the part of the
+                        Company. Please answer all questions fully and return form without delay to<br>
+                        <span style="font-weight: 1000;">
+                            <bold>ALLIANZ NIGERIA INSURANCE PLC</bold>
+                        </span>
+                    </p>
+                    <hr>
+                </div>
+                <div class="insurediv mt-5">
+                    <div>
+                        <label for="name">I/We</label>
+                        <input type="text" name="name" id="name" class="nonoutlineinput">
+                        <label for="insuredbeneficiary">(the insured/beneficiary), of</label>
+                        <input type="text" name="insuredbeneficiary" id="insuredbeneficiary" class="nonoutlineinput"> 
+                        <span>. (Address) hereby declare that all information provided by me/us 
+                            pertaining to the claim below has been wholly and honestly
+                             supplied to<span style="font-weight: bold;"> ALLIANZ NIGERIA INSURANCE PLC </span>
+                             are complete, true, authentic and verifiable.
+                        </span><br>
+                    </div>
+                    <div class="mt-5">
+                        <ol class="insureinputlist">
+                            <li>
+                                <h6>Details of insured</h6>
+                                <ol>
+                                    <li>
+                                        <label for="name">Name</label>
+                                        <input type="text" name="name" id="name">
+                                    </li>
+                                    <li>
+                                        <label for="vehicleregno">Vehicle Reg No</label>
+                                        <input type="text" name="vehicleregno" id="vehicleregno">
+                                    </li>
+                                    <li>
+                                        <label for="email">E-Mail:</label>
+                                        <input type="email" name="email" id="email">
+                                    </li>
+                                    <li>
+                                        <label for="telephoneno">Telephone Number</label>
+                                        <input type="text" name="telephoneno" id="telephoneno">
+                                    </li>
+                                    <li>
+                                        <label for="bvn">BVN</label>
+                                        <input type="text" name="bvn" id="bvn">
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h6>Driver’s Details (Complete if not same as policy holder)</h6>
+                                <ol>
+                                    <li>
+                                        <label for="driversfullname">Driver’s Full Name</label>
+                                        <input type="text" name="driversfullname" id="driversfullname">
+                                    </li>
+                                    <li>
+                                        <label for="driveraddress">Address</label>
+                                        <input type="text" name="driveraddress" id="driveraddress">
+                                    </li>
+                                    <li>
+                                        <label for="driversphoneno">Phone Number</label>
+                                        <input type="text" name="driversphoneno" id="driversphoneno">
+                                    </li>
+                                    <li>
+                                        <label for="driverinsuredrelationship">Driver’s Relationship to Insured</label>
+                                        <input type="text" name="driverinsuredrelationship" id="driverinsuredrelationship">
+                                    </li>
+                                    <li>
+                                        <label for="holdlicense">Does he/she hold a license?</label>
+                                        <select name="holdlicense" id="holdlicense">
+                                            <option value="">please select</option>
+                                            <option value="true">True</option>
+                                            <option value="false">False</option>
+                                        </select><br>
+                                        <label for="licensecopy">If yes, provide a copy </label>
+                                        <input type="file" name="licensecopy" id="licensecopy">
+                                    </li>
+                                    <li>
+                                        <label for="isthereresonsibiltyadmision">
+                                            Was there any admission of responsibility 
+                                            for the accident
+                                        </label>
+                                        <select name="isthereresonsibiltyadmision" id="isthereresonsibiltyadmision">
+                                            <option value="">please select</option>
+                                            <option value="true">True</option>
+                                            <option value="false">False</option>
+                                        </select><br>
+                                        <label for="responsibiltyadmissiondetails">If yes, give details</label>
+                                        <textarea name="responsibiltyadmissiondetails" id="responsibiltyadmissiondetails" style="width: 60%;"></textarea>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h6> Details of Accident/Theft</h6>
+                                <ol >
+                                    <li>
+                                        <div  class="row checkdiv" >
+                                            <div class="col-sm-4">
+                                                <label for="accidentaltoownvehicle">Accidental Damage toOwn Vehicle</label>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <input  type="checkbox" name="accidentaltoownvehicle" id="accidentaltoownvehicle">
+                                            </div>
+                                        </div>
+                                       
+                                    </li>
+                                    <li>
+                                        <div  class="row checkdiv">
+                                            <div class="col-sm-4">
+                                                <label for="isthirdpartydamage">Third PartyProperty Damage</label>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <input type="checkbox" name="isthirdpartydamage" id="isthirdpartydamage">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div  class="row checkdiv">
+                                            <div class="col-sm-4">
+                                                <label for="istheft">Theft/Vandalization</label>
+                                                </div>
+                                            <div class="col-sm-3">
+                                                <input  type="checkbox" name="istheft" id="istheft">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div  class="row checkdiv">
+                                            <div class="col-sm-4">
+                                                <label for="isfiredamage">Fire Damage</label>
+                                                </div>
+                                            <div class="col-sm-3">
+                                                <input  type="checkbox" name="isfiredamage" id="isfiredamage">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div  class="row checkdiv">
+                                            <div class="col-sm-4">
+                                                <label for="isthirdpartyinjury/death">Third Party Injury/Death</label>
+                                                </div>
+                                            <div class="col-sm-3">
+                                                <input  type="checkbox" name="isthirdpartyinjury" id="isthirdpartyinjury">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label for="dateloss">Date of Loss</label>
+                                        <input type="date" name="dateloss" id="dateloss">
+                                    </li>
+                                    <li>
+                                        <label for="vehicleregno">Vehicle Reg. No</label>
+                                        <input type="date" name="vehicleregno" id="vehicleregno">
+                                    </li>
+                                    <li>
+                                        <label for="theftlocation">Location of Theft/Accident</label>
+                                        <input type="date" name="theftlocation" id="theftlocation">
+                                    </li>
+                                    <li>
+                                        <label for="thefttime">Time of Theft/Accident</label>
+                                        <input type="time" name="thefttime" id="thefttime">
+                                    </li>
+                                    <li>
+                                        <label for="accidentnarration">Narration of Accident</label>
+                                        <textarea type="date" name="accidentnarration" id="accidentnarration" style="width: 60%;"></textarea>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h6>Third Party Details (Please complete the following if other vehicles were involved or other property damaged)</h6>
+                                <ol>
+                                    <li>
+                                        <label for="thirdpartyvehiclewonername">Name ofthe third party vehicle owner/driver</label>
+                                        <input type="text" name="thirdpartyvehiclewonername" id="thirdpartyvehiclewonername">
+                                    </li>
+                                    <li>
+                                        <label for="vehiclemodel">Vehicle make/model</label>
+                                        <input type="text" name="vehiclemodel" id="vehiclemodel">
+                                    </li>
+                                    <li>
+                                        <label for="vehicleregno">Vehicle RegNo</label>
+                                        <input type="time" name="vehicleregno" id="vehicleregno">
+                                    </li>
+                                    <li>
+                                        <label for="thirdpartydamagedescription">Describe the damage to the third party vehicle/property</label>
+                                        <textarea type="date" name="thirdpartydamagedescription" id="thirdpartydamagedescription" style="width: 60%;"></textarea>
+                                    </li>
+                                    <li>
+                                        <label for="thirdartyphoneno">Phone No</label>
+                                        <input type="time" name="thirdartyphoneno" id="thirdartyphoneno">
+                                    </li>
+                                    <li>
+                                        <label for="thirdpartyemail">Email</label>
+                                        <input type="time" name="thirdpartyemail" id="thirdpartyemail">
+                                    </li>
+                                    <li>
+                                        <label for="insurancecertificate">Insurance details (Provide evidence/certificate)</label>
+                                        <input type="file" name="insurancecertificate" id="insurancecertificate">
+                                    </li>
+                                    <li>
+                                        <label for="thirdpartyoffceaddress">Home/ office address</label>
+                                        <input type="text" name="thirdpartyoffceaddress" id="thirdpartyoffceaddress">
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h6>Witnesses, including all your passengers (Use additional sheets where necessary)</h6>
+                                <h6>Witness 1</h6>
+                                <ol>
+                                    <li>
+                                        <label for="witness1name">Name</label>
+                                        <input type="text" name="witness1name" id="witness1name">
+                                    </li>
+                                    <li>
+                                        <label for="witness1phone">Mobile No</label>
+                                        <input type="text" name="witness1phone" id="witness1phone">
+                                    </li>
+                                    <li>
+                                        <label for="witness1address">Address</label>
+                                        <input type="text" name="witness1name" id="witness1name">
+                                    </li>
+                                    <li>
+                                        <label for="witness1locationataccident">Where was the witness when the accident occurred</label>
+                                        <input type="text" name="witness1locationataccident" id="witness1locationataccident">
+                                    </li>
+                                </ol>
+                                <h6>Witness 2</h6>
+                                <ol>
+                                    <li>
+                                        <label for="witness2name">Name</label>
+                                        <input type="text" name="witness2name" id="witness2name">
+                                    </li>
+                                    <li>
+                                        <label for="witness2phone">Mobile No</label>
+                                        <input type="text" name="witness2phone" id="witness2phone">
+                                    </li>
+                                    <li>
+                                        <label for="witness2address">Address</label>
+                                        <input type="text" name="witness2name" id="witness2name">
+                                    </li>
+                                    <li>
+                                        <label for="witness2locationataccident">Where was the witness when the accident occurred</label>
+                                        <input type="text" name="witness2locationataccident" id="witness2locationataccident">
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                        <div class="mt-4">
+                            <p>I/We authorize the Company and/or their Legal representatives to deal with all matters arising from this claim at their discretion and if they deem it expedient,
+                                to admit liability and/or negligence on the part ofmyself / our servant or agents.</p>
+                        </div>
+                        <div class="mt-5 row">
+                            <div class="col-sm-6">
+                                <label for="declarantsignature">Signature</label>
+                                <input type="file" name="declarantsignature" id="declarantsignature" >
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="signaturedate">Date</label>
+                                <input type="date" name="signaturedate" id="signaturedate" >
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <h6>Kindly provide the following document to fast track claim settlement</h6>
+                            <ol>
+                                <li>
+                                    <label for="bankdetails">Bank Details</label>
+                                    <input type="file" name="bankdetails" id="bankdetails">
+                                </li>
+                                <li>
+                                    <label for="repairestimate"> Repair Estimate</label>
+                                    <input type="file" name="repairestimate" id="repairestimate">
+                                </li>
+                                <li>
+                                    <label for="damagephotograph">Photograph of Damage</label>
+                                    <input type="file" name="damagephotograph" id="damagephotograph">
+                                </li>
+                                <li>
+                                    <label for="policereport">Plice Report</label>
+                                    <input type="file" name="policereport" id="policereport">
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="mt-5">
+                            <ol>
+                                <li>
+                                    <label for="accountname">ACCOUNT NAME</label>
+                                    <input type="text" name="accountname" id="accountname">
+                                </li>
+                                <li>
+                                    <label for="bankname">BANK NAME</label>
+                                    <input type="text" name="bankname" id="bankname">
+                                </li>
+                                <li>
+                                    <label for="accountnumber">ACCOUNT NUMBER</label>
+                                    <input type="text" name="bankname" id="bankname">
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4" style="text-align: center;">
+                    <button id="submitinfo" name="submitinfo" type="submit" class="btn btn-sm btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

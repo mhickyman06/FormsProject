@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Death Claim</title>
+    <link rel="stylesheet" href="../Styles/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Styles/site.css">
+    <style>
+        .insureinputlist h6 {
+            margin-left: 28px; font-size: 14px;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="container risk_container">
+        <div class="risk_inner">
+            <form>
+                <div class="about">
+                    <p>The issue of this form is NOT an admission of liability on the part of the
+                         Company. Please answer all questions fully and return form without delay to<br>
+                         <span style="font-weight: 1000;">
+                            <bold>ALLIANZ NIGERIA INSURANCE PLC</bold>
+                        </span>
+                    </p>
+                    <hr>
+                </div>
+                <div class="insurediv mt-5">
+                    <div>
+                        <h6>POLICY DETAILS</h6>
+                        <ol class="insureinputlist">
+                           <li>
+                               <label for="policynumber">Policy Number</label>
+                               <input type="text" name="policynumber" id="policynumber" style="width: 60%;">
+                           </li>
+                           <li >
+                               <h6 > DETAILS OF LIFE ASSURED</h6>
+                               <ul >
+                                   <li>
+                                        <label for="fullname">Fullname</label>
+                                        <input type="text" name="fullname" id="fullname" style="width: 60%;">
+                                   </li>
+                                   <li>
+                                       <label for="deathdate">Date of Death</label>
+                                       <input type="date" name="deathdate" id="deathdate">
+                                   </li>
+                                   <li>
+                                       <label for="deathplace">Place of Death</label>
+                                       <input type="text" name="deathplace" id="deathplace">
+                                   </li>
+                                   <li>
+                                       <label for="burialplace">Place of Burial</label>
+                                       <input type="text" name="burialplace" id="burialplace">
+                                   </li>
+                                   <li>
+                                       <label for="residentialaddress">Residential Address</label>
+                                       <input type="text" name="residentialaddress" id="residentialaddress">
+                                   </li>
+                                   <li>
+                                       <label for="workaddress">Work Place Address</label>
+                                       <input type="text" name="workaddress" id="workaddress">
+                                   </li>
+                                   <li>
+                                        <label for="nextofkinname">Name of Next of Kin/Beneficiary</label>
+                                        <input type="text" name="nextofkinname" id="nextofkinname">
+                                  </li>
+                                  <li>
+                                        <label for="relationship">Relationship</label>
+                                        <input type="text" name="relationship" id="relationship">
+                                  </li>
+                                  <li>
+                                        <label for="nextofkinphone">Next of Kin/Beneficiary Phone Number</label>
+                                        <input type="text" name="nextofkinphone" id="nextofkinphone">
+                                  </li>                               
+                               </ul>
+                           </li>
+                           <li>
+                                <h6>DETAILS OF PHYSICIAN WHO ATTENDED TO THE LIFE ASSURED</h6>
+                                <ul>
+                                    <li>
+                                       <label for="physicianname">Name</label> 
+                                       <input type="text" name="physicianname" id="physicianname">
+                                    </li>
+                                    <li>
+                                        <label for="hospitalname">Hospital Name</label>
+                                        <input type="text" name="hospitalname" id="hospitalname">
+                                    </li>
+                                    <li>
+                                        <label for="hospitaladdress">Hospital Address</label>
+                                        <input type="text" name="hospitaladdress" id="hospitaladdress">
+                                    </li>
+                                    <li>
+                                        <label for="physicianphone">Phone Number</label>
+                                        <input type="text" name="physicianphone" id="physicianphone">
+                                    </li>
+                                    <li>
+                                        <label for="DoctorsregPhone">Doctors Registration Number</label>
+                                        <input type="text" name="DoctorsregPhone" id="DoctorsregPhone">
+                                    </li>
+                                    <li>
+                                        <label for="doctorsignature">Doctors Signature </label>
+                                        <input type="file" name="doctorsignature" id="doctorsignature">
+                                    </li>
+                                </ul>
+                           </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="mt-4" style="text-align: center;">
+                    <button id="submitinfo" name="submitinfo" type="submit" class="btn btn-sm btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

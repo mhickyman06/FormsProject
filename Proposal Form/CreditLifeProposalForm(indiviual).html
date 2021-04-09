@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Styles/site.css">
+    <title>Credit Life Proposal Claim Form(Individual)</title>
+    <style>
+        .about h6{
+            font-size: 14px;
+            font-family: 'Calibri', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container risk_container">
+        <div class="risk_inner">
+            <form>
+                <div class="about">
+                    <h6>Impotant Information</h6>
+                    <ol>
+                        <li>
+                            <p>
+                                AN INDIVIDUAL WHO ASSISTS AN APPLICANT TO COMPLETE AN APPLICATION OR  PROPOSAL FORM FOR
+                                INSURANCE SHALL BE DEEMED TO HAVE DONE SO AS THE AGENT OF THE APPLICANT IN ACCORDANCE
+                                WITH SECTION 54(2), INSURANCE ACT, 2003
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                . THE LIABILITY OF THE COMPANY DOES NOT COMMENCE UNTIL THIS APPLICATION IS ACCEPTED AND THE    
+                                  PREMIUM IS PAID IN ACCORDANCE WITH SECTION 50(1) OF INSURANCE ACT 2003
+                            </p>
+                        </li>
+                    </ol>
+                    <hr>
+                </div>
+                <div class="insurediv mt-3">
+                    <section>
+                        <h6>INDIVIDUAL PROPOSAL FORM</h6>
+                        <p><b>Please use BLOCK CAPITALS, insert YES or NO where appropriate and initial any amendments</b></p>
+                        <div>
+                            <ol class="insureinputlist">
+                                <li>
+                                    <label for="surname">Surname</label>
+                                    <input type="text" name="surname" id="surname"> 
+                                </li>
+                                <li>
+                                    <label for="firstname">First Name</label>
+                                    <input type="text" name="firstname" id="firstname"> 
+                                </li>
+                                <li>
+                                    <label for="Surname">Last Name</label>
+                                    <input type="text" name="surname" id="surname"> 
+                                </li>
+                                <li>
+                                    <label for="mothersmaidenname"> MOTHER’S MAIDEN NAME</label>
+                                    <input type="text" name="mothersmaidenname" id="mothersmaidenname"> 
+                                </li>
+                                <li>
+                                    <label for="tite">Title</label>
+                                    <select name="tite" id="tite">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="mr">MR</option>
+                                        <option value="mrs">MRS</option>
+                                        <option value="others">OTHERS</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label for="dateofbirth">DATE OF BIRTH</label>
+                                    <input style="width: 20%;" type="date" name="dateofbirth" id="dateofbirth"> 
+                                    <label for="dateofbirthevidence">please attached evidence</label>
+                                    <input style="width: 30%;" type="file" name="dateofbirthevidence" id="dateofbirthevidence">
+                                </li>
+                                <li>
+                                    <label for="contactaddress">CONTACT ADDRESS (NOT P.O.BOX)</label>
+                                    <input type="text" name="contactaddress" id="contactaddress"> 
+                                </li>
+                                <li>
+                                    <label for="residentialaddress">RESIDENTIAL ADDRESS</label>
+                                    <input type="text" name="residentialaddress" id="residentialaddress"> 
+                                </li>
+                                <li>
+                                    <label for="town">TOWN</label>
+                                    <input type="text" name="town" id="town"> 
+                                </li>
+                                <li>
+                                    <label for="state">STATE</label>
+                                    <input type="text" name="state" id="state"> 
+                                </li>
+                                <li>
+                                    <label for="country">COUNTRY</label>
+                                    <input type="text" name="country" id="country"> 
+                                </li>
+                                <li>
+                                    <label for="preferdaddress">PREFERRED CORRESPONDENCE ADDRESS</label>
+                                    <select name="preferdaddress" id="preferdaddress">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="residential">RESIDENTIAL</option>
+                                        <option value="office">OFFICE</option>
+                                    </select>                               
+                                 </li>
+                                 <li>
+                                    <label for="officetelno">TELEPHONE NO: OFFICE</label>
+                                    <input type="text" name="officetelno" id="officetelno"> 
+                                </li>
+                                <li>
+                                    <label for="mobileno">Mobile</label>
+                                    <input type="text" name="mobileno" id="mobileno"> 
+                                </li>
+                                <li>
+                                    <label for="email">EMAIL</label>
+                                    <input type="email" name="email" id="email"> 
+                                </li>
+                                 <li>
+                                    <label for="occupation">OCCUPATION</label>
+                                    <input type="text" name="occupation" id="occupation"> 
+                                </li>
+                                <li>
+                                    <label for="bvn">BVN</label>
+                                    <input type="text" name="bvn" id="bvn"> 
+                                </li> 
+                                <li>
+                                    <label for="maritalstatus">MARITAL STATUS</label>
+                                    <select name="maritalstatus" id="maritalstatus">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="single">SINGLE</option>
+                                        <option value="married">MARRIED</option>
+                                        <option value="divorce_separated">WIDOWED</option>
+                                    </select>                                
+                                </li>
+                                <li>
+                                    <label for="sex"> SEX</label>
+                                    <select name="sex" id="sex">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="male">MALE</option>
+                                        <option value="female">FEMALE</option>
+                                    </select>                                
+                                </li>
+                                <li>
+                                    <label for="religion">RELIGION</label>
+                                    <input type="text" name="religion" id="religion"> 
+                                </li> 
+                                <li>
+                                    <label for="nationality">NATIONALITY</label>
+                                    <input type="text" name="nationality" id="nationality"> 
+                                </li> 
+                                <li>
+                                    <label for="employmentstatus"> EMPLOYMENT STATUS</label>
+                                    <select name="employmentstatus" id="employmentstatus">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="selfemployed">SELF-EMPLOYED</option>
+                                        <option value="partnership">PARTNERSHIP</option>
+                                        <option value="civilservant">CIVIL SERVANT</option>
+                                        <option value="privatesector">PRIVATE SECTORE-EMPLOYEE</option>
+                                    </select>                                
+                                </li>
+                                <li>
+                                    <label for="company_businessname">COMPANY/BUSINESS/EMPLOYER’S NAME</label>
+                                    <input type="text" name="company_businessname" id="company_businessname"> 
+                                </li> 
+                                <li>
+                                    <label for="annualincome">ANNUAL INCOME BAND (NGN):</label>
+                                     <div>
+                                         <ol style="list-style: none;">
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <label for="is1mto2m">1m-2m</label>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <input type="checkbox" name="is1mto2m" id="is1mto2m">
+                                                    </div>
+                                                 </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <label for="is2mto5m">2m-5m</label>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <input type="checkbox" name="is2mto5m" id="is2mto5m">
+                                                    </div>
+                                                 </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <label for="is5mto10m">5m-10m</label>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <input type="checkbox" name="is5mto10m" id="is5mto10m">
+                                                    </div>
+                                                 </div>
+                                            </li>
+                                         </ol>
+                                     </div>    
+                                </li> 
+                                <li>
+                                    <label for="meansofidentifacation">MEANS OF IDENTIFICATION</label>
+                                    <select name="meansofidentifacation" id="meansofidentifacation">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="nationalid">NATIONAL ID</option>
+                                        <option value="driverslicense">DRIVER's LICENSE</option>
+                                        <option value="intlpassport">INT'L PASSPORT</option>
+                                        <option value="voterscard">VOTERS CARD</option>
+                                    </select>                                
+                                </li> 
+                                <li>
+                                    <label for="identifactionno">IDENTIFICATION NUMBER</label>
+                                    <input type="text" name="identifactionno" id="identifactionno"> 
+                                </li> 
+                                <li>
+                                    <label for="issuingathority">ISSUING AUTHORITY</label>
+                                    <input type="text" name="issuingathority" id="issuingathority"> 
+                                </li>
+                                <li>
+                                    <label for="dateofissue">DATE OF ISSUE</label>
+                                    <input type="date" name="issuingathority" id="issuingathority"> 
+                                </li>
+                                <li>
+                                    <label for="dateofissueexpiry">DATE OF EXPIRY</label>
+                                    <input type="date" name="dateofissueexpiry" id="dateofissueexpiry"> 
+                                </li> 
+                                <li>
+                                    <label for="residentpermitfornonnigeria">RESIDENT PERMIT (FOR NON NIGERIANS):</label>
+                                    <input type="text" name="residentpermitfornonnigeria" id="residentpermitfornonnigeria"> 
+                                </li> 
+                            </ol>
+                        </div>
+                   </section>
+                   <section>
+                        <h6>POLICY TYPE: CREDIT LIFE</h6>
+                        <div>
+                            <ol class="insureinputlist">
+                                <li>
+                                    <label for="loanamount">LOAN AMOUNT</label>
+                                    <input type="text" name="loanamount" id="loanamount"> 
+                                </li>
+                                <li>
+                                    <label for="policyterm">POLICY TERM</label>
+                                    <input type="text" name="policyterm" id="policyterm"> 
+                                </li>
+                                <li>
+                                    <label for="periodofcover">PERIOD OF COVER</label>
+                                    <input type="text" name="periodofcover" id="periodofcover"> 
+                                </li>
+                                <li>
+                                    <label for="frequencyofpayment">FREQUENCY OF PAYMENT</label>
+                                    <select name="frequencyofpayment" id="frequencyofpayment">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="monthly">MONTHLY</option>
+                                        <option value="quarterly">QUARTERLY</option>
+                                        <option value="bi_annually">BI-ANNUALLY</option>
+                                        <option value="annually">ANNUALLY</option>
+                                        <option value="sigle">SINGLE</option>
+                                    </select>                                 
+                                 </li>
+                                 <li>
+                                    <label for="methodofpayingpremium">BY WHAT METHOD WILL PREMIUM BE PAID</label>
+                                    <select name="methodofpayingpremium" id="methodofpayingpremium">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="cheque">CHEQUE</option>
+                                        <option value="directdebit">DIRECT DEBIT</option>
+                                    </select>                                 
+                                 </li>
+                                 <li>
+                                    <label for="expectedpremium">EXPECTED PREMIUM</label>
+                                    <input type="text" name="expectedpremium" id="expectedpremium"> 
+                                </li>
+                            </ol>
+                        </div>
+                   </section>
+                   <section>
+                        <h6>OTHER RELEVANT INFORMATION</h6>
+                        <div>
+                            <ol class="insureinputlist">
+                                <li>
+                                    <label for="beneficiaries"> BENEFICIARY (IES)</label>
+                                    <input type="text" name="beneficiaries" id="beneficiaries"> 
+                                </li>
+                                <li>
+                                    <label for="islifeassurancepolicy"> DO YOU HAVE A LIFE ASSURANCE POLICY</label>
+                                    <select name="islifeassurancepolicy" id="islifeassurancepolicy">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="true">TRUE</option>
+                                        <option value="false">FALSE</option>
+                                    </select>                        
+                                    <label for="lifeassurancedetails">IF YES, GIVE DETAILS</label>   
+                                    <textarea name="lifeassurancedetails" id="lifeassurancedetails" style="width: 60%;"></textarea>        
+                                </li>
+                                <li>
+                                    <label for="otherbeneficiaries"> OTHER EXISTING POLICIES (if applicable)</label>
+                                    <input type="text" name="otherbeneficiaries" id="otherbeneficiaries"> 
+                                </li>
+                                <li>
+                                    <span for="otherbeneficiaries"> NAME/ADDRESS OF ASSURER</span><br>
+                                    <label for="assurrername">NAME</label>
+                                    <input type="text" name="assurrername" id="assurrername"> <br>
+                                    <label for="assurreraddress">ADDRESS</label>
+                                    <input type="text" name="assurreraddress" id="assurreraddress">
+                                </li>
+                                <li>
+                                    <label for="haslifeproposaleverbeendeclared">
+                                        HAS ANY PROPOSAL ON YOUR LIFE EVER BEEN DECLINED, POSTPONED, DEFERRED, WITHDRAWN OR ACCEPTED ON SPECIAL 
+                                    </label>
+                                    <select name="haslifeproposaleverbeendeclared" id="haslifeproposaleverbeendeclared">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="true">TRUE</option>
+                                        <option value="false">FALSE</option>
+                                    </select>                        
+                                    <label for="lifeproposaldeclinessdetail">IF YES, GIVE DETAILS</label>   
+                                    <textarea name="lifeproposaldeclinessdetail" id="lifeproposaldeclinessdetail" style="width: 60%;"></textarea>        
+                                </li>
+                                <li>
+                                    <label for="hasintentionofresidingoutnigeria">
+                                        HAVE YOU ANY INTENTION OF RESIDING OUTSIDE NIGERIA                                             
+                                    </label>
+                                    <select name="hasintentionofresidingoutnigeria" id="hasintentionofresidingoutnigeria">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="true">TRUE</option>
+                                        <option value="false">FALSE</option>
+                                    </select>                        
+                                </li>
+                                <li>
+                                    <label for="istravelinprivateflight">
+                                        DO YOU TRAVEL IN NON-SCHEDULED PRIVATE FLIGHT
+                                     </label>
+                                    <select name="istravelinprivateflight" id="istravelinprivateflight">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="true">TRUE</option>
+                                        <option value="false">FALSE</option>
+                                    </select>                        
+                                </li>
+                                <li>
+                                    <label for="sportsparticipated">WHAT SPORTS DO YOU PARTICIPATE IN</label>
+                                    <input type="text" name="sportsparticipated" id="sportsparticipated">
+                                </li>
+                                <li>
+                                    <label for="haveservedinforce">
+                                        HAVE YOU SERVED OR APPLIED FOR SERVICE OR ARE YOU CURRENTLY SERVING IN THE ARMED FORCES, POLICE, CUSTOMS OR 
+                                        OTHER PARAMILITARY/SECURITY FORCE
+                                    </label>
+                                    <select name="haveservedinforce" id="haveservedinforce">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="true">TRUE</option>
+                                        <option value="false">FALSE</option>
+                                    </select><br>                       
+                                    <label for="dischargemedicalcondition"> IF YOU HAVE SERVED IN ANY, WHAT WAS YOUR MEDICAL GRADE ON DISCHARGE</label>   
+                                    <input name="dischargemedicalcondition" id="dischargemedicalcondition" style="width: 30%;"> <br>
+                                    <span>NAME AND ADDRESS OF YOUR DOCTOR</span><br>
+                                    <label for="doctorname">NAME</label>
+                                    <input type="text" name="doctorname" id="doctorname"><br>
+                                    <label for="doctoraddress">ADDRESS</label>
+                                    <input type="text" name="doctoraddress" id="doctoraddress">
+                                </li>
+                                <li>
+                                    <label for="physicalreportheight">PHYSICAL DESCRIPTION: HEIGHT </label>
+                                    <input type="text" name="physicalreportheight" id="physicalreportheight" style="width: 20%;">
+                                    <label for="physicalreportweight">WEIGHT (IN KG)</label>
+                                    <input type="text" name="physicalreportweight" id="physicalreportweight" style="width: 20%;">
+                                </li>
+                                <li>
+                                    <p>HAVE YOU RECEIVED MEDICAL ADVICE OR TREATMENT IN CONNECTION WITH THE FOLLOWING</p>
+                                    <ol style="list-style: none;">
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <label for="ishiv_aids">HIV/AIDS</label>
+                                                </div>
+                                                <div class="col-2">
+                                                    <input type="checkbox" name="ishiv_aids" id="ishiv_aids">
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="row">
+                                                        <div class="col-sm-3">
+                                                            <label for="hivdetails">DETAILS</label>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <textarea type="text" name="hivdetails" id="hivdetails" style="width: 100%;"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <label for="iscancer">CANCER</label>
+                                                </div>
+                                                <div class="col-2">
+                                                    <input type="checkbox" name="iscancer" id="iscancer">
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="row">
+                                                        <div class="col-sm-3">
+                                                            <label for="iscancerdetails">DETAILS</label>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <textarea type="text" name="iscancerdetails" id="iscancerdetails" style="width: 100%;"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <label for="iscancer">CANCER</label>
+                                                </div>
+                                                <div class="col-2">
+                                                    <input type="checkbox" name="iscancer" id="iscancer">
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="row">
+                                                        <div class="col-sm-3">
+                                                            <label for="iscancerdetails">DETAILS</label>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <textarea type="text" name="iscancerdetails" id="iscancerdetails" style="width: 100%;"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <label for="isstroke_paralysis">STROKE / PARALYSIS </label>
+                                                </div>
+                                                <div class="col-2">
+                                                    <input type="checkbox" name="isstroke_paralysis" id="isstroke_paralysis">
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="row">
+                                                        <div class="col-sm-3">
+                                                            <label for="isstroke_paralysisdetails">DETAILS</label>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <textarea type="text" name="isstroke_paralysisdetails" id="isstroke_paralysisdetails" style="width: 100%;"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <label for="isliver_kidenyproblem">LIVER / KIDNEY PROBLEM </label>
+                                                </div>
+                                                <div class="col-2">
+                                                    <input type="checkbox" name="isliver_kidenyproblem" id="isliver_kidenyproblem">
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="row">
+                                                        <div class="col-sm-3">
+                                                            <label for="isliver_kidenyproblemdetails">DETAILS</label>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <textarea type="text" name="isliver_kidenyproblemdetails" id="isliver_kidenyproblemdetails" style="width: 100%;"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <label for="isheartproblem">HEART RELATED PROBLEM  </label>
+                                                </div>
+                                                <div class="col-2">
+                                                    <input type="checkbox" name="isheartproblem" id="isheartproblem">
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="row">
+                                                        <div class="col-sm-3">
+                                                            <label for="isheartproblemdetails">DETAILS</label>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <textarea type="text" name="isheartproblemdetails" id="isheartproblemdetails" style="width: 100%;"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <label for="isnervoursedisease">NERVOUS DISEASE  </label>
+                                                </div>
+                                                <div class="col-2">
+                                                    <input type="checkbox" name="isnervoursedisease" id="isnervoursedisease">
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="row">
+                                                        <div class="col-sm-3">
+                                                            <label for="isnervoursediseasedetails">DETAILS</label>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <textarea type="text" name="isnervoursediseasedetails" id="isnervoursediseasedetails" style="width: 100%;"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <label for="istuberculosis">TUBERCULOSIS</label>
+                                                </div>
+                                                <div class="col-2">
+                                                    <input type="checkbox" name="istuberculosis" id="istuberculosis">
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="row">
+                                                        <div class="col-sm-3">
+                                                            <label for="istuberculosisdetails">DETAILS</label>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <textarea type="text" name="istuberculosisdetails" id="istuberculosisdetails" style="width: 100%;"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <label for="isanythingsufferednotthere">
+                                                    IS THERE ANYTHING YOU HAVE SUFFERED FROM WHICH HAS NOT BEEN MENTIONED ABOVE?     
+                                                 </label>
+                                                 <select name="isanythingsufferednotthere" id="isanythingsufferednotthere">
+                                                     <option value="" disabled selected>Please select</option>
+                                                     <option value="true">TRUE</option>
+                                                     <option value="false">FALSE</option>
+                                                 </select>
+                                                 <label for="isanythingsufferednottheredetails">IF YES, PLEASE PROVIDE DETAILS</label>
+                                                 <textarea type="text" name="isanythingsufferednottheredetails" id="isanythingsufferednottheredetails" style="width: 100%;"></textarea>
+                                            </div>
+                                           
+                                        </li>
+                                        <li>
+                                            <div class="mt-4">
+                                                <label for="ispregnant">ARE YOU PREGNANT</label>
+                                                <select name="ispregnant" id="ispregnant">
+                                                    <option value="" disabled selected>Please select</option>
+                                                    <option value="true">TRUE</option>
+                                                    <option value="false">FALSE</option>
+                                                </select>
+                                                <label for="pregnancyduedate">IF YES, PLEASE GIVE DUE DETAILS</label>
+                                                 <input type="date" name="pregnancyduedate" id="pregnancyduedate" >
+                                            </div>                                        
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </div>
+                   </section>
+                   
+                <div class="mt-4">
+                    <h6>
+                        PLEASE STATE ANY MATERIAL FACT, SUBSTANCE OR INFORMATION REGARDING YOUR HEALTH AND WAY OF LIVING WHICH WAS NOT SPECIFICALLY MENTIONED ABOVE 
+                    </h6>
+                    <h6 class="mt-4">Please input these following documents:</h6>
+                    <ol style="list-style: none;">
+                        <li>
+                            <label for="kycformfile">Complete KYC form</label>
+                            <input type="file" name="kycformfile" id="kycformfile">
+                        </li>
+                        <li>
+                            <span> <b>please provide Valid Means of Identification of 2 of the Board Members </b></span>
+                            <ol style="list-style: none;">
+                                <li>
+                                    <span>Board of member1</span><br>
+                                    <label for="member1meansofidentification">Means of Identification</label>
+                                    <input type="file" name="member1meansofidentification" id="member1meansofidentification">
+                                </li>
+                                <li>
+                                    <span>Board of member2</span><br>
+                                    <label for="member2meansofidentification">Means of Identification</label>
+                                    <input type="file" name="member2meansofidentification" id="member1meansofidentification">
+                                </li>
+                            </ol>
+                            <input type="file" name="kycformfile" id="kycformfile">
+                        </li>
+                        <li>
+                            <label for="incorporationcertificate">Copy of Certificate of Incorporation </label>
+                            <input type="file" name="incorporationcertificate" id="incorporationcertificate">
+                        </li>
+                        <li>
+                            <label for="memoranddumorarticlecopy">Copy of Memorandum/Article of Association (details of the current shareholding structure must be included)</label>
+                            <input type="file" name="memoranddumorarticlecopy" id="memoranddumorarticlecopy">
+                        </li>
+                    </ol>
+                </div>
+                <div class="mt-4" style="text-align: center;">
+                    <button id="submitinfo" name="submitinfo" type="submit" class="btn btn-sm btn-primary">Submit</button>
+                </div>               
+            </form>
+        </div>
+    </div>  
+</body>
+</html>

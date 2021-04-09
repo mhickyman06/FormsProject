@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Styles/site.css">
+    <title>Fidelity Guarantee Proposal Form</title>
+    <style>
+        .about h6{
+            font-size: 14px;
+            font-family: 'Calibri', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="container risk_container">
+        <div class="risk_inner">
+            <form>
+                <div class="about">
+                    <h6>Impotant Information</h6>
+                    <ol>
+                        <li>
+                            <p>
+                                AN INDIVIDUAL WHO ASSISTS AN APPLICANT TO COMPLETE AN APPLICATION OR  PROPOSAL FORM FOR
+                                INSURANCE SHALL BE DEEMED TO HAVE DONE SO AS THE AGENT OF THE APPLICANT IN ACCORDANCE
+                                WITH SECTION 54(2), INSURANCE ACT, 2003
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                . THE LIABILITY OF THE COMPANY DOES NOT COMMENCE UNTIL THIS APPLICATION IS ACCEPTED AND THE    
+                                  PREMIUM IS PAID IN ACCORDANCE WITH SECTION 50(1) OF INSURANCE ACT 2003
+                            </p>
+                        </li>
+                    </ol>
+                    <hr>
+                </div>
+                <div class="insurediv mt-3">
+                    <div>
+                        <ol class="insureinputlist">
+                            <li>
+                                <label for="companyname">Name of Company</label>
+                                <input type="text" name="companyname" id="companyname"> 
+                            </li>
+                            <li>
+                                <label for="companyaddress">Address of the Company</label>
+                                <input type="text" name="companyaddress" id="companyaddress"> 
+                            </li>
+                            <li>
+                                <label for="town">Town</label>
+                                <input type="text" name="town" id="town"> 
+                            </li>
+                            <li>
+                                <label for="city">City</label>
+                                <input type="text" name="city" id="city"> 
+                            </li>
+                            <li>
+                                <label for="state">State</label>
+                                <input type="text" name="state" id="state"> 
+                            </li>
+                            <li>
+                                <label for="country">Country</label>
+                                <input type="text" name="country" id="country"> 
+                            </li>
+                            <li>
+                                <label for="regno">Incorporation/Registration No</label>
+                                <input type="text" name="regno" id="regno"> 
+                            </li>
+                            <li>
+                                <label for="regdate">Date of Registration </label>
+                                <input type="date" name="regdate" id="regdate"> 
+                            </li>
+                            <li>
+                                <label for="registratioonstate">State of Incorporation/Registration</label>
+                                <input type="text" name="registratioonstate" id="registratioonstate"> 
+                            </li>
+                            <li>
+                                <label for="registrationcountry">Country of Registration</label>
+                                <input type="text" name="registrationcountry" id="registrationcountry"> 
+                            </li>
+                            <li>
+                                <label for="phoneno">Operating Phone No(s)</label>
+                                <input type="text" name="phoneno" id="phoneno"> 
+                            </li>
+                            <li>
+                                <label for="emailaddress">Email Address</label>
+                                <input type="text" name="emailaddress" id="emailaddress"> 
+                            </li>
+                              <li>
+                                <label for="website">Website</label>
+                                <input type="text" name="website" id="website"> 
+                            </li>
+                            <li>
+                                <label for="fax">FAX (if available)</label>
+                                <input type="text" name="fax" id="fax"> 
+                            </li>
+                            <li>
+                                <label for="taxno">Tax Identification No. (TIN</label>
+                                <input type="text" name="taxno" id="taxno"> 
+                            </li>
+                            <li>
+                                <label for="bvnno">Bank Verification No. (BVN)</label>
+                                <input type="text" name="bvnno" id="bvnno">
+                                <div class="mt-4">
+                                    <ol style="list-style-position: outside;">
+                                        <li  class="mt-3">
+                                            <h6>Principal Officer1</h6>
+                                            <div class="row">
+                                                <div class="col-lg-3 col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-12  ">
+                                                            <label for="principalofficer1">Name of principal officer</label>
+                                                        </div>
+                                                        <div class="col-12  ">
+                                                            <input type="text" name="principalofficer1" id="principalofficer1">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 ">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <label for="principalofficer1designation">Designation</label>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <input type="text" name="principalofficer1designation" id="principalofficer1designation">
+                                                        </div>
+                                                   </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="row">                                        
+                                                        <div class="col-12 ">
+                                                            <label for="principalofficer1bvn">Bank verification Number</label>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <input type="text" name="principalofficer1bvn" id="principalofficer1bvn">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li  class="mt-3">
+                                            <h6>Principal Officer2</h6>
+                                            <div class="row">
+                                                <div class="col-lg-3 col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-12  ">
+                                                            <label for="principalofficer2">Name of principal officer</label>
+                                                        </div>
+                                                        <div class="col-12  ">
+                                                            <input type="text" name="principalofficer2" id="principalofficer2">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 ">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <label for="principalofficer1designation">Designation</label>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <input type="text" name="principalofficer1designation" id="principalofficer1designation">
+                                                        </div>
+                                                   </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="row">                                        
+                                                        <div class="col-12 ">
+                                                            <label for="principalofficer2bvn">Bank verification Number</label>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <input type="text" name="principalofficer2bvn" id="principalofficer2bvn">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li  class="mt-3">
+                                            <h6>Principal Officer3</h6>
+                                            <div class="row">
+                                                <div class="col-lg-3 col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-12  ">
+                                                            <label for="principalofficer3">Name of principal officer</label>
+                                                        </div>
+                                                        <div class="col-12  ">
+                                                            <input type="text" name="principalofficer3" id="principalofficer3">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 ">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <label for="principalofficer1designation">Designation</label>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <input type="text" name="principalofficer1designation" id="principalofficer1designation">
+                                                        </div>
+                                                   </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="row">                                        
+                                                        <div class="col-12 ">
+                                                            <label for="principalofficer3bvn">Bank verification Number</label>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <input type="text" name="principalofficer3bvn" id="principalofficer3bvn">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                       
+                                    </ol>
+                                    <div class="mt-3">
+                                        <label for="periodofcover"><b>Period of Cover</b></label>
+                                            <input type="text" name="periodofcover" id="periodofcover">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="valueofproperty"><b>Value of Property/Cover/Insurance</b></label>
+                                <input type="text" name="valueofproperty" id="valueofproperty">
+                            </li>
+                            <li>
+                                <label for="annualturnover"><b>Annual Turnover</b></label>
+                                <input type="text" name="annualturnover" id="annualturnover">
+                            </li>
+                            <li>
+                                <label for="limitofindemnity"><b>Limit of Indemnity: Anyone Occurrence</b></label>
+                                <input type="text" name="limitofindemnity" id="limitofindemnity">
+                            </li>
+                            <li>
+                                <label for="anyoneperiodofinsurance"><b>Anyone Period of Insurance</b></label>
+                                <input type="text" name="anyoneperiodofinsurance" id="anyoneperiodofinsurance">
+                            </li>
+                            <li>
+                                <label for="expectedpremium"><b> Expected Premium</b></label>
+                                <input type="text" name="expectedpremium" id="expectedpremium">
+                            </li>
+                            <li>
+                                <label for="sourceoffunds"><b> Source of Funds</b></label>
+                                <input type="text" name="sourceoffunds" id="sourceoffunds">
+                            </li>
+                            <li>
+                                <label for="bankers"><b> 
+                                    Bankers</b></label>
+                                <input type="text" name="bankers" id="bankers">
+                            </li>
+                            <li>
+                                <label for="howfrequeantlyauditmade"><b> How frequently are audits made</b></label>
+                                <select name="howfrequeantlyauditmade" id="howfrequeantlyauditmade">
+                                    <option value=""selected disabled>please select</option>
+                                    <option value="internal">Internal</option>
+                                    <option value="external">External</option>
+                                </select>
+                               
+                                
+                            </li>
+                            <li>
+                                <label for="externalauditors"><b> 
+                                    Who are your external auditors</b></label>
+                                <input type="text" name="externalauditors" id="externalauditors">
+                            </li>
+                            <li>
+                                <label for="arealllocationaudited"><b> Are all locations audited</b></label>
+                                <select name="arealllocationaudited" id="arealllocationaudited">
+                                    <option value=""selected disabled>please select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                                <label for="arealllocationauditeddetails"><b> If no state why</b></label>
+                                <textarea name="arealllocationauditeddetails" id="arealllocationauditeddetails" style="width: 60%;"></textarea>
+                            </li>
+                            <li>
+                                <label for="dateoflastinternalaudit"><b>Date of last audit: Internal 
+                                    Bankers</b></label>
+                                <input type="date" name="dateoflastinternalaudit" id="dateoflastinternalaudit">
+                            </li>
+                            <li>
+                                <label for="dateoflastexternalaudit"><b>Date of last audit: External 
+                                    Bankers</b></label>
+                                <input type="date" name="dateoflastexternalaudit" id="dateoflastexternalaudit">
+                            </li>
+                            <li>
+                                <label for="arerefrencesfrompreviousemployeerequirefornewemployee"><b>Are references from previous Employees required for all new Employees</b></label>
+                                <select name="arerefrencesfrompreviousemployeerequirefornewemployee" id="arerefrencesfrompreviousemployeerequirefornewemployee">
+                                    <option value=""selected disabled>please select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="arebankaccountreconciled"><b>Are bank accounts reconciled by someone who is not authorized to deposit or withdraw from them</b></label>
+                                <select name="arebankaccountreconciled" id="arebankaccountreconciled">
+                                    <option value=""selected disabled>please select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="maximumvalueofmoneyatlocation"><b>What is the maximum value of money, negotiable instruments 
+                                    at one location.(during business hours, outside)
+                                    </b>
+                                </label>
+                                <input type="text" name="maximumvalueofmoneyatlocation" id="maximumvalueofmoneyatlocation">
+                            </li>
+                            <li>
+                                <label for="maximumvalueofmoneyatlocation"><b>What security measures are taken with respect to the transfer 
+                                    of money and/or negotiable instruments
+                                    </b>
+                                </label>
+                                <input type="text" name="maximumvalueofmoneyatlocation" id="maximumvalueofmoneyatlocation">
+                            </li>
+                            <li>
+                                <label for="whatsecuritymeans"><b>What security measures are taken with respect to the transfer of 
+                                    money and/or negotiable instruments
+                                    </b>
+                                </label>
+                                <select name="whatsecuritymeans" id="whatsecuritymeans">
+                                    <option value=""selected disabled>please select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="largestamountheldbyemployee"><b>State largest amount held by any employee at one time
+                                    </b>
+                                </label>
+                                <input type="text" name="largestamountheldbyemployee" id="largestamountheldbyemployee">
+                            </li>
+                            <li>
+                                <label for="goods"><b>
+                                     Goods
+                                    </b>
+                                </label>
+                                <input type="text" name="goods" id="goods">
+                            </li>
+                           
+                            <li>
+                                <label for="howoftenareemployeesrequiredtoccountmoney"><b>
+                                    How often are employees required to account for money received? Please state
+                                    </b>
+                                </label>
+                                <input type="text" name="howoftenareemployeesrequiredtoccountmoney" id="howoftenareemployeesrequiredtoccountmoney">
+                            </li>
+                            <li>
+                                <label for="stepstoaccountsrecievedmoney"><b>
+                                    What steps are taken to ensure that all sums received by employees are accounted for? Please state
+                                    </b>
+                                </label>
+                                <input type="text" name="stepstoaccountsrecievedmoney" id="stepstoaccountsrecievedmoney">
+                            </li>
+                            <li>
+                                <label for="doesmployeespayinmoneyonemployersbankaccount"><b>
+                                    Do employees pay in money or draw cash on employer’s bank account
+                                    </b>
+                                </label>
+                                <select name="doesmployeespayinmoneyonemployersbankaccount" id="doesmployeespayinmoneyonemployersbankaccount">
+                                    <option value=""selected disabled>please select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>                            
+                            </li>
+                            <li>
+                                <label for="doemployeeshavedutiesinconnectionwithledgers"><b>
+                                    Do employees who handle money or goods have duties in 
+                                    connection with ledgers or stock record books?
+                                    </b>
+                                </label>
+                                <select name="doemployeeshavedutiesinconnectionwithledgers" id="doemployeeshavedutiesinconnectionwithledgers">
+                                    <option value=""selected disabled>please select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>        
+                                <label for="doemployeeshavedutiesinconnectionwithledgersdetails"><b> If yes give details</b></label>
+                                <textarea name="doemployeeshavedutiesinconnectionwithledgersdetails" id="doemployeeshavedutiesinconnectionwithledgersdetails" style="width: 60%;"></textarea>                       
+                            </li>
+                            <li>
+                                <label for="maximumamountofcashheld"><b>
+                                    State maximum amount of petty cash held
+                                    </b>
+                                </label>
+                                <input type="text" name="maximumamountofcashheld" id="maximumamountofcashheld">
+                            </li>
+                            <li>
+                                <label for="doesmployeespayinmoneyonemployersbankaccount"><b>
+                                    Do employees pay in money or draw cash on employer’s bank account
+                                    </b>
+                                </label>
+                                <select name="doesmployeespayinmoneyonemployersbankaccount" id="doesmployeespayinmoneyonemployersbankaccount">
+                                    <option value=""selected disabled>please select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>                            
+                            </li>
+                            <li>
+                                <label for="iscashmadebycrossedcheque"><b>
+                                    Are all disbursements other than petty cash made by crossed cheques                                    </b>
+                                </label>
+                                <select name="iscashmadebycrossedcheque" id="arecashmadebycrossedcheque">
+                                    <option value=""selected disabled>please select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>                            
+                            </li>
+                            <li>
+                                <label for="iscashmadebycrossedcheque"><b>
+                                    Are all disbursements other than petty cash made by crossed cheques                                    </b>
+                                </label>
+                                <select name="iscashmadebycrossedcheque" id="arecashmadebycrossedcheque">
+                                    <option value=""selected disabled>please select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>                            
+                            </li>
+                            <li>
+                                <label for="issignaturesofallchequerequires"><b>
+                                    Is counter signature of all cheques required                        
+                                </b>
+                                </label>
+                                <select name="issignaturesofallchequerequires" id="issignaturesofallchequerequires">
+                                    <option value=""selected disabled>please select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>                            
+                            </li>
+                            <li>
+                                <label for="aregoodssubjecttojointcontrol"><b>
+                                    Are securities/goods subject to joint control by two or more employees                       
+                                </b>
+                                </label>
+                                <select name="aregoodssubjecttojointcontrol" id="aregoodssubjecttojointcontrol">
+                                    <option value=""selected disabled>please select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>                            
+                            </li>
+                            <li>
+                                <label for="systemofauthorizing"><b>
+                                    What is the system for authorizing the purchase
+                                     of goods and recording deliveries                               
+                                     </b>
+                                </label>
+                                <input type="text" name="systemofauthorizing" id="systemofauthorizing">
+                            </li>
+                            <li>
+                                <label for="istheresystemforauthorizing"><b>
+                                    Is there system for authorizing the dispatch of goods and ensuring that dispatch is recorded and charged
+                                    to the customer
+                                         </b>
+                                </label>
+                                <select name="istheresystemforauthorizing" id="istheresystemforauthorizing">
+                                    <option value=""selected disabled>please select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select> 
+                                <label for="istheresystemforauthorizingdetails"><b> if yes,by whom are they signed and what amount is dual signature required
+                                </b>
+                                </label> 
+                                <input type="text" name="istheresystemforauthorizingdetails" id="istheresystemforauthorizingdetails">                          
+                            </li>
+                            <li>
+                                <label for="doemployeefullaccesstocash"><b>
+                                    Do any employees have full access to the cash and
+                                     accounts or Stock/inventory controls?
+                                    </b>
+                                </label>
+                                <select name="doemployeefullaccesstocash" id="doemployeefullaccesstocash">
+                                    <option value=""selected disabled>please select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select> 
+                                <label for="doemployeefullaccesstocashdetails"><b> if yes, Please provide details
+                                </b>
+                                </label> 
+                                <textarea style="width: 60%;" type="text" name="doemployeefullaccesstocashdetails" id="doemployeefullaccesstocashdetails"> </textarea>                         
+                            </li>
+                            <li>
+                                <label for="istherecontrolaccesstolocation"><b>
+                                    Is there controlled access to all locations where money and/or stock are kept
+                                    </b>
+                                </label>
+                                <select name="istherecontrolaccesstolocation" id="istherecontrolaccesstolocation">
+                                    <option value=""selected disabled>please select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select> 
+                            </li>
+                            <li>
+                                <label for="istherecontrolaccesstolocation"><b>
+                                    Is there controlled access to all locations where money and/or stock are kept
+                                    </b>
+                                </label>
+                                <select name="istherecontrolaccesstolocation" id="istherecontrolaccesstolocation">
+                                    <option value=""selected disabled>please select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>     
+                            </li>
+                            <li>
+                                <label for="arepremisesconnected"><b>
+                                    Are all the premises containing money, stock etc.
+                                     connected to a central intruder alarm system</b>
+                                </label>
+                                <select name="arepremisesconnected" id="arepremisesconnected">
+                                    <option value=""selected disabled>please select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select> 
+                            </li>
+                        </ol>
+                        <div class="mt-3">
+                            <h6><b>Claim Information</b></h6>
+                            <p><b>Has there been any occasion to question the honesty or good conduct of any of the persons to be guaranteed</b></p>
+                            <p><b>If so give details</b></p>
+                            <textarea name="claiminfo" id="claiminfo" style="width: 60%;"></textarea>
+                        </div>
+                        <div class="mt-4 ">
+                            <h6><b>List any act of dishonesty or incidents which have occurred during the last five years</b></h6>
+                            <div>
+                                <ol >
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-12  ">
+                                                        <label for="date1">Date</label>
+                                                    </div>
+                                                    <div class="col-12  ">
+                                                        <input type="date" name="date1" id="date1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 ">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <label for="description1">Description</label>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <input type="text" name="description1" id="description1">
+                                                    </div>
+                                               </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="row">                                        
+                                                    <div class="col-12 ">
+                                                        <label for="amount1">Amount</label>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <input type="text" name="amount1" id="amount1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 ">
+                                                <div class="row">                                        
+                                                    <div class="col-12">
+                                                        <label for="measures1">Preventive Measures</label>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <input type="text" name="measures1" id="measures1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mt-4">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <label for="date1">Date</label>
+                                                    </div>
+                                                    <div class="col-12  ">
+                                                        <input type="date" name="date1" id="date1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 ">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <label for="description1">Description</label>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <input type="text" name="description1" id="description1">
+                                                    </div>
+                                               </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="row">                                        
+                                                    <div class="col-12 ">
+                                                        <label for="amount1">Amount</label>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <input type="text" name="amount1" id="amount1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 ">
+                                                <div class="row">                                        
+                                                    <div class="col-12">
+                                                        <label for="measures1">Preventive Measures</label>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <input type="text" name="measures1" id="measures1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mt-4">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-12  ">
+                                                        <label for="date1">Date</label>
+                                                    </div>
+                                                    <div class="col-12  ">
+                                                        <input type="date" name="date1" id="date1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 ">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <label for="description1">Description</label>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <input type="text" name="description1" id="description1">
+                                                    </div>
+                                               </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="row">                                        
+                                                    <div class="col-12 ">
+                                                        <label for="amount1">Amount</label>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <input type="text" name="amount1" id="amount1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 ">
+                                                <div class="row">                                        
+                                                    <div class="col-12">
+                                                        <label for="measures1">Preventive Measures</label>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <input type="text" name="measures1" id="measures1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li  class="mt-3">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-12  ">
+                                                        <label for="date1">Date</label>
+                                                    </div>
+                                                    <div class="col-12  ">
+                                                        <input type="date" name="date1" id="date1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 ">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <label for="description1">Description</label>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <input type="text" name="description1" id="description1">
+                                                    </div>
+                                               </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="row">                                        
+                                                    <div class="col-12 ">
+                                                        <label for="amount1">Amount</label>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <input type="text" name="amount1" id="amount1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 ">
+                                                <div class="row">                                        
+                                                    <div class="col-12">
+                                                        <label for="measures1">Preventive Measures</label>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <input type="text" name="measures1" id="measures1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-12  ">
+                                                        <label for="date1">Date</label>
+                                                    </div>
+                                                    <div class="col-12  ">
+                                                        <input type="date" name="date1" id="date1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 ">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <label for="description1">Description</label>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <input type="text" name="description1" id="description1">
+                                                    </div>
+                                               </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="row">                                        
+                                                    <div class="col-12 ">
+                                                        <label for="amount1">Amount</label>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <input type="text" name="amount1" id="amount1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 ">
+                                                <div class="row">                                        
+                                                    <div class="col-12">
+                                                        <label for="measures1">Preventive Measures</label>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <input type="text" name="measures1" id="measures1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h6 class="mt-4"><b>Has any company declined, cancelled, refused
+                                                     or accepted your proposal on special terms and conditions?</b>
+                                                </h6>
+                                                <select name="hasanycompanydeclinedproposal" id="hasanycompanydeclinedproposal">
+                                                    <option value=""selected disabled>please select</option>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                                </select> 
+                                                <label for="hasanycompanydeclinedproposal"><b> If yes, give details a separate sheet</b> </label>
+                                                <input type="file" name="hasanycompanydeclinedproposal" id="hasanycompanydeclinedproposal">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ol>
+                                <hr>
+                                <div>
+                                    <h6><b>Declaration</b></h6>
+                                    <p>I/We agree that: </p>
+                                    <ol style="list-style: lower-alpha;">
+                                        <li><p>The information supplied in this proposal is true and complete and that 
+                                            I /We have not concealed, misrepresented or misstated   any material fact.</p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                This Proposal shall form the basis of my / our contract with ENSURE INSURANCE PLC
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                Immediate notice shall be given to ENSURE INSURANCE PLC of any alteration 
+                                                in the circumstances described herein.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                No insurance will be in force until this Proposal has been accepted by 
+                                                ENSURE INSURANCE PLC and premium paid.
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="mt-4">
+                                    <h6>
+                                        PLEASE STATE ANY MATERIAL FACT, SUBSTANCE OR INFORMATION REGARDING YOUR HEALTH AND WAY OF LIVING WHICH WAS NOT SPECIFICALLY MENTIONED ABOVE 
+                                    </h6>
+                                    <h6 class="mt-4">Please input these following documents:</h6>
+                                    <ol style="list-style: none;">
+                                        <li>
+                                            <label for="kycformfile">Complete KYC form</label>
+                                            <input type="file" name="kycformfile" id="kycformfile">
+                                        </li>
+                                        <li>
+                                            <span> <b>please provide Valid Means of Identification of 2 of the Board Members </b></span>
+                                            <ol style="list-style: none;">
+                                                <li>
+                                                    <span>Board of member1</span><br>
+                                                    <label for="member1meansofidentification">Means of Identification</label>
+                                                    <input type="file" name="member1meansofidentification" id="member1meansofidentification">
+                                                </li>
+                                                <li>
+                                                    <span>Board of member2</span><br>
+                                                    <label for="member2meansofidentification">Means of Identification</label>
+                                                    <input type="file" name="member2meansofidentification" id="member1meansofidentification">
+                                                </li>
+                                            </ol>
+                                            <input type="file" name="kycformfile" id="kycformfile">
+                                        </li>
+                                        <li>
+                                            <label for="incorporationcertificate">Copy of Certificate of Incorporation </label>
+                                            <input type="file" name="incorporationcertificate" id="incorporationcertificate">
+                                        </li>
+                                        <li>
+                                            <label for="memoranddumorarticlecopy">Copy of Memorandum/Article of Association (details of the current shareholding structure must be included)</label>
+                                            <input type="file" name="memoranddumorarticlecopy" id="memoranddumorarticlecopy">
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="mt-3">
+                                    <p>
+                                        I/We agree to accept a policy in the Company’s usual form for this class of insurance
+                                    </p>
+                                    <div class="mt-5 row">
+                                        <div class="col-sm-7">
+                                            <label for="proposersignature">Signature of Proposer</label>
+                                            <input type="file" name="proposersignature" id="proposersignature" >
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <label for="proposersignaturedate">Date</label>
+                                            <input type="date" name="proposersignaturedate" id="proposersignaturedate" >
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <h6 style="text-align: center;margin-bottom: 30px;">OFFICIAL USE ONLY</h6>
+                                        <p>Broker/Agent/BA</p>
+                                       
+                                        <label for="sbu_hub_spoke">SBU/Hub/Spoke</label>
+                                        <input type="text" name="sbu_hub_spoke" id="sbu_hub_spoke" style="width: 60%;"><br>
+                                        <label for="clientriskcategories">Client’s Risk Category</label>
+                                        <select name="clientriskcategories" id="clientriskcategories">
+                                            <option value="" selected disabled> please select</option>
+                                            <option value="accept">Accept</option>
+                                            <option value="decline">Decline</option>
+                                        </select>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="mt-4" style="text-align: center;">
+                    <button id="submitinfo" name="submitinfo" type="submit" class="btn btn-sm btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Styles/site.css">
+    <title>Marine Hall Claim Form</title>
+</head>
+<body>
+    <div class="container risk_container">
+        <div class="risk_inner">
+            <form>
+                <div class="about">
+                    <p>The issue of this form is NOT an admission of liability on the part of the
+                        Company. Please answer all questions fully and return form without delay to<br>
+                        <span style="font-weight: 1000;">
+                            <bold>ALLIANZ NIGERIA INSURANCE PLC</bold>
+                        </span>
+                    </p>
+                    <hr>
+                </div>
+                <div class="insurediv mt-3">
+                    <h6>Immediate Notice Must Be Given To The Police</h6>
+                    <div>
+                        <ol class="insureinputlist">
+                            <li>
+                                <label for="policnumber">Policy Number</label>
+                                <input type="text" name="policnumber" id="policnumber">
+                            </li>
+                            <li>
+                                <label for="vesselname"> Name of Vessel</label>
+                                <input type="text" name="vesselname" id="vesselname">
+                            </li>
+                            <li>
+                                <label for="insuredname">Insured's Name</label>
+                                <input type="text" name="insuredname" id="insuredname">
+                            </li>
+                            <li>
+                                <label for="address">Address</label>
+                                <input type="text" name="address" id="address">
+                            </li>
+                            <li>
+                                <label for="tellno">Tel. No</label>
+                                <input type="text" name="tellno" id="tellno">
+                            </li>
+                            <li>
+                                <label for="occurrencedate">Date of Occurrence</label>
+                                <input type="date" name="occurrencedate" id="occurrencedate">
+                            </li>
+                            <li>
+                                <label for="place"> Place</label>
+                                <input type="text" name="place" id="place">
+                            </li>
+                            <li>
+                                <label for="occurencedetails">Describe the occurrence</label>
+                                <textarea name="occurencedetails" id="occurencedetails" style="width: 60%;"></textarea>
+                            </li>
+                            <li>
+                                <label for="voyagepurpose">Purpose of voyage if vessel underway</label>
+                                <textarea name="voyagepurpose" id="voyagepurpose" style="width: 60%;"></textarea>
+                            </li>
+                            <li>
+                                <label for="crewnames">Names of crew on board (if any) at time of occurrence</label>
+                                <textarea name="crewnames" id="crewnames" style="width: 60%;"></textarea>
+                            </li>
+                            <li>
+                                <label for="isvesselsalvage">Has any attempt been made to salvage vessel</label>
+                                <select name="isvesselsalvage" id="isvesselsalvage">
+                                    <option value="" disabled="disabled" selected>Please select</option>
+                                    <option value="true">True</option>
+                                    <option value="false">False</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="vessellocation">Where is the vessel now</label>
+                                <input type="text" name="vessellocation" id="vessellocation">
+                            </li>
+                            <li>
+                                <label for="isvesselconditionworthy">Was Vessel in a worthy condition at the time of occurrence</label>
+                                <select name="isvesselconditionworthy" id="isvesselconditionworthy">
+                                    <option value="" disabled="disabled" selected>Please select</option>
+                                    <option value="true">True</option>
+                                    <option value="false">False</option>
+                                </select> 
+                            <li>
+                                <label for="whenvessellastused">When was vessel last used before this incident?</label>
+                                <input type="text" name="whenvessellastused" id="whenvessellastused">
+                            </li>
+                            <li>
+                                <label for="vesellicensecopy">If a charter vessel, please attach copy of license</label>
+                                <input type="file" name="vesellicensecopy" id="vesellicensecopy">
+                            </li>
+                            <li>
+                                <label for="skippername">Name of skipper</label>
+                                <input type="text" name="skippername" id="skippername">
+                            </li>
+                            <li>
+                                <label for="estimatedclaimamount">Estimated amount of claim</label>
+                                <input type="text" name="estimatedclaimamount" id="estimatedclaimamount">
+                            </li>
+                            <li>
+                                <label for="hassauthoritybeenadvised">Has any authority been advised of the occurrence e.g Police, Port Authority, Coast Guard</label>
+                                <select name="hassauthoritybeenadvised" id="hassauthoritybeenadvised">
+                                    <option value="" disabled="disabled" selected>Please select</option>
+                                    <option value="true">True</option>
+                                    <option value="false">False</option>
+                                </select>   
+                            </li>     
+                            <li>
+                                <label for="supportingdocument">if true, attach a supporting document</label>
+                                <input type="file" name="supportingdocument" id="supportingdocument">
+                            </li> 
+                        </ol>
+                    </div>
+                    <hr>
+                    <div class="mt-5">
+                        <h6>Declaration</h6>
+                        <p>
+                            I/We declare the foregoing particulars to be true and correct
+                            and undertake to render every assistance in my/our power in dealing with the matter.
+                        </p>
+                        <div class="mt-5 row">
+                            <div class="col-sm-6">
+                                <label for="declarantsignature">Signature</label>
+                                <input type="file" name="declarantsignature" id="declarantsignature" >
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="signaturedate">Date</label>
+                                <input type="date" name="signaturedate" id="signaturedate" >
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="mt-4" style="text-align: center;">
+                    <button id="submitinfo" name="submitinfo" type="submit" class="btn btn-sm btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

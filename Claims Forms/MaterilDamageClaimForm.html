@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Styles/site.css">
+    <title>Material Damage Claim Form</title>
+</head>
+<body>
+    <div class="container risk_container">
+        <div class="risk_inner">
+            <form>
+                <div class="about">
+                    <p>The issue of this form is NOT an admission of liability on the part of the
+                        Company. Please answer all questions fully and return form without delay to<br>
+                        <span style="font-weight: 1000;">
+                            <bold>ALLIANZ NIGERIA INSURANCE PLC</bold>
+                        </span>
+                    </p>
+                    <hr>
+                </div>
+                <div class="insurediv mt-3">
+                    <h6>Immediate Notice Must Be Given To The Police</h6>
+                    <div>
+                        <ol class="insureinputlist">
+                            <li>
+                                <h6>Details of insured</h6>
+                                <ol>
+                                    <li>
+                                        <label for="insuredname">Insured Name</label>
+                                        <input type="text" name="insuredname" id="insuredname">
+                                    </li>
+                                    <li>
+                                        <label for="policyno"> Ploicy No</label>
+                                        <input type="text" name="policyno" id="policyno">
+                                    </li>
+                                    <li>
+                                        <label for="address">Address</label>
+                                        <input type="text" name="address" id="address">
+                                    </li>
+                                    <li>
+                                        <label for="contactperson">Contact Person</label>
+                                        <input type="text" name="contactperson" id="contactperson">
+                                    </li>
+                                    <li>
+                                        <label for="telephoneno"> Telephone No</label>
+                                        <input type="text" name="telephoneno" id="telephoneno">
+                                    </li>
+                                    <li>
+                                        <label for="email">Email</label>
+                                        <input type="email" name="email" id="email">
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h6>Details of loss/damage</h6>
+                                <ol>
+                                    <li>
+                                        <label for="lossdatetime"> Data and time of loss/damage</label>
+                                        <input type="datetime-local" name="lossdatetime" id="lossdatetime">
+                                    </li>
+                                    <li>
+                                        <label for="lossaddress">Address where loss/damage occured</label>
+                                        <input type="email" name="lossaddress" id="lossaddress">
+                                    </li>
+                                    <li>
+                                        <label for="lossdescription"> Detailed description of how the loss occured</label>
+                                        <textarea name="lossdescription" id="lossdescription" style="width: 60%;"></textarea>
+                                    </li>
+                                    <li>
+                                        <label for="email">Email</label>
+                                        <input type="email" name="email" id="email">
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                    <hr>
+                    <div class="mt-5">
+                        <h6>Declaration</h6>
+                        <label for="declarantname"> I/We</label>
+                        <input type="text" name="declarantname" id="declarantname" class="nonoutlineinput" style="width: 60%;"><br>
+                        <label for="declarantposition">Position of the insured and on behalf and on behalf of 
+                            the insured declared above answers to be true and correct AND acknowledge that the insurer
+                            may make its decision on indemnity having regard to these answer
+                        </label>
+                        <input type="text" name="declarantposition" id="declarantposition" class="nonoutlineinput">
+                </div>
+                <div class="mt-5 row">
+                    <div class="col-sm-6">
+                        <label for="declarantsignature">Signature</label>
+                        <input type="file" name="declarantsignature" id="declarantsignature" >
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="signaturedate">Date</label>
+                        <input type="date" name="signaturedate" id="signaturedate" >
+                    </div>
+                </div>
+                <hr>
+                <div class="mt-5">
+                    <h6>Statetement of claim</h6>
+                    <p>N.B: - The amount to be claimed on any article is limited to the actual intrinsic value at
+                        the time of the loss.<br>
+                        The extent of damage should be stated as fully as possible
+                    </p>
+                    <ol>
+                        <li>
+                            <label for="propertydescription"> Full Description of Property</label>
+                            <textarea name="propertydescription" id="propertydescription" style="width: 50%;"></textarea>
+                        </li>
+                        <li>
+                            <label for="costprice">Cost Price</label>
+                            <input type="text" name="costprice" id="costprice">
+                        </li>
+                        <li>
+                            <label for="claimedamount">Amount Claimed</label>
+                            <input type="text" name="claimedamount" id="claimedamount">
+                        </li>
+                    </ol>
+                </div>
+                <div class="mt-4" style="text-align: center;">
+                    <button id="submitinfo" name="submitinfo" type="submit" class="btn btn-sm btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

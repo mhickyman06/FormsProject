@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Styles/site.css">
+    <title>Burglary Claim Form</title>
+    <style>
+       ol li > select
+       {
+             margin-left: 30px;
+             width: 50%;
+        } 
+    </style>
+</head>
+<body>
+    <div class="container risk_container">
+        <div class="risk_inner">
+            <form>
+                <div class="about">
+                    <p>The issue of this form is NOT an admission of liability on the part of the
+                         Company. Please answer all questions fully and return form without delay to<br>
+                         <span style="font-weight: 1000;">
+                            <bold>ALLIANZ NIGERIA INSURANCE PLC</bold>
+                        </span>
+                    </p>
+                    <hr>
+                    <p class="mt-4">
+                        <label for="insured">Insured:</label>
+                        <input  id="insured" name="insured" class="insuredinput">
+                    </p>
+                </div>
+                <div class="insurediv mt-3">
+                    <div>
+                        <ol class="insureinputlist">
+                            <li>
+                                <label for="policynumber">Policy Number</label>
+                                <input name="policynumber" id="policynumber">
+                            </li>
+                            <li>
+                                <ol style="list-style: lower-alpha;">
+                                    <li >
+                                        <span>Date and time when the loss occurred</span>
+                                        <label for="lossdatetime" name="lossdatetime">Date</label>
+                                        <input type="datetime-local" id="lossdatetime" name="lossdatetime">
+                                    </li>
+                                </ol>  
+                            </li>
+                            <li>
+                                <span style="margin-left: 25px;">Date of discovery and by whom discovered.</span>
+                                <label for="discoverydate" >Date</label>
+                                <input type="date" name="discoverydate" id="discoverydate" >
+                                <label for="discoveryperson">By whom</label>
+                                <input  name="discoveryperson" id="discoveryperson">
+                            </li>
+                            <li>
+                                <ol style="list-style: lower-alpha;">
+                                    <li>
+                                            <span  for="lossPremises">
+                                                 Address and description of the premises where the loss occurred. 
+                                                State whether Private Dwelling House, Maisonette, Flat, Apartments,
+                                                Boarding or Lodging House. If Flat, state whether self-contained or 
+                                                not.
+                                            </span><br>
+                                        <input type="text " name="lossPremises" id="lossPremises" >
+                                       
+                                    </li>
+                                    <li>
+                                        <span for="premisespart">
+                                            State the part of the premises from which the property was stolen.
+                                        </span>
+                                        <input type="text" name="premisespart" id="premisespart" >
+                                    </li>
+                                    <li>
+                                        <label for="ispropertyowner">
+                                            Are you the sole owner of the stolen or damaged property described 
+                                            overleaf?
+                                        </label>
+                                        <select name="ispropertyowner" id="ispropertyowner" >
+                                            <option selected disabled="disabled">please select</option>
+                                            <option value="true">true</option>
+                                            <option value="false">false</option>
+                                        </select>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <label for="ispremisesoccuped" class="mt-2">
+                                    State whether the premises were unoccupied at the time of the loss. 
+                                </label>
+                                <select name="ispremisesoccuped" id="ispremisesoccuped" >
+                                    <option selected disabled="disabled">please select</option>
+                                    <option value="true">true</option>
+                                    <option value="false">false</option>
+                                </select><br>
+                                <label for="longness">if true how long</label>
+                                <input type="text" name="longness" id="longness"class="mt-2" >
+                            </li>
+                            <li>
+                                <label for="ispremiseslent">
+                                    State whether the premises or any part thereof were lent, let or 
+                                    sub-let at the time of the loss.
+                                </label>
+                                <select name="ispremiseslent" id="ispremiseslent">
+                                    <option selected disabled="disabled">please select</option>
+                                    <option value="true">true</option>
+                                    <option value="false">false</option>
+                                </select>
+                            </li>
+                            <li class="mt-2">
+                                <label for="entrydetails" class="mt-2">
+                                    How was entry to the premises effected? Give full details
+                                </label>
+                                <textarea name="entrydetails" id="entrydetails"class="mt-2"></textarea>
+                            </li>
+                            <li>
+                                <label for="datenotifiedpolice">
+                                    date loss notified to the Police and
+                                </label>
+                                <input type="date" name="datenotifiedpolice" id="datenotifiedpolice">
+                                <label for="stationaddress">the name of the address of the police station</label>
+                                <input type="text" name="stationaddress" id="stationaddress">
+                            </li>
+                            <li>
+                                <label for="issuspicions">Have you any suspicions as to parties?</label>
+                                <select name="issuspicions" id="issuspicions" style="width: 20%;">
+                                    <option selected disabled="disabled">please select</option>
+                                    <option value="true">true</option>
+                                    <option value="false">false</option>
+                                </select><br>
+                                <label for="suspicionsdetails">if true give details</label>
+                                <textarea name="suspicionsdetails" id="suspicionsdetails" class="mt-2" ></textarea>
+                            </li>
+                            <li>
+                                <label for="premisescontentsvalue">
+                                    At the time of the loss what was the total value of the whole contents 
+                                    of premises?
+                                </label>
+                                <input type="text" name="premisescontentsvalue" id="premisescontentsvalue">
+                            </li>
+                            <li>
+                                <label for="ispropertyinsured">
+                                    is the property claimed for insured with any other Company or withUnderwriters
+                                     against Burglary, Housebreaking, Larceny, or All Risks?
+                                </label>
+                                <select name="ispropertyinsured" id="ispropertyinsured">
+                                    <option selected disabled="disabled">please select</option>
+                                    <option value="true">true</option>
+                                    <option value="false">false</option>
+                                </select><br>
+                                <label for="propertydetails"> If true, give full particulars including name of insurers and Policy number</label>
+                                <textarea name="propertydetails" id="propertydetails" class="mt-2"></textarea>
+                            </li>
+                            <li>
+                                <label for="issufferedloss">
+                                    Have you previously suffered a loss by Burglary, Housebreaking or theft? 
+                                </label>
+                                <select name="issufferedloss" id="issufferedloss">
+                                    <option selected disabled="disabled">please select</option>
+                                    <option value="true">true</option>
+                                    <option value="false">false</option>
+                                </select><br>
+                                <label for="previouslylossdetails">if true, give particulars</label>
+                                <textarea name="previouslylossdetails" id="previouslylossdetails" class="mt-2"></textarea>
+                            </li>
+                            <li>
+                                <label for="isunderriskpolicy">Insurance Company or Underwriters under a Burglary or All Risks policy</label>
+                                <select name="isunderriskpolicy" id="isunderriskpolicy">
+                                    <option selected disabled="disabled">please select</option>
+                                    <option value="true">true</option>
+                                    <option value="false">false</option>
+                                </select><br>
+                                <label for="policyparticulars"> If so please give full particulars</label>
+                                <textarea name="policyparticulars" id="policyparticulars" class="mt-2"></textarea>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="mt-4">
+                        <p>
+                            I do solemnly declare that the Property described on the other side belonging 
+                            to me/us, and insured under the said Policy, was stolen or damaged, and 
+                            that the amounts severally stated represent the sum. I/We am/are entitled to claim,
+                            in terms of the Policy. 
+                        </p>
+                        <p>
+                            I also declare that no other person has an interest in the said Property, whether as Owner, 
+                            Mortgagee, Trustee or otherwise that is not otherwise insured 
+                            against All Risks, Burglary, Housebreaking or Theft with this or any other Office or with
+                            Underwriters, except as herein mentioned, that I/We have not 
+                            withheld any material information and that all the statements on this form are to the best
+                            of my knowledge and belief correct.
+                        </p>
+                    </div>
+                    <div style="margin-top: 80px;">
+                        <label for="dated">Dated </label>
+                        <input type="datetime-local" name="dated" id="dated"><br>
+                        <label for="address">Address</label>
+                        <input name="address" id="address"class="nonoutlineinput"style="width: 80%;" ><br>
+                        <label for="witness">Witness</label>
+                        <input name="witness" id="witness"class="nonoutlineinput"style="width: 80%;" >
+                    </div>  
+                </div>
+                <div class="mt-4" style="text-align: center;">
+                    <button id="submitinfo" name="submitinfo" type="submit" class="btn btn-sm btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Styles/site.css">
+    <title>Goods in Transit Claim Form</title>
+</head>
+<body>
+    <div class="container risk_container">
+        <div class="risk_inner">
+            <form>
+                <div class="about">
+                    <p>The issue of this form is NOT an admission of liability on the part of
+                    the Company. Please answer all questions fully and return form without delay
+                    to<br>
+                    <span style="font-weight: 1000;">
+                        <bold>ALLIANZ NIGERIA INSURANCE PLC</bold>
+                    </span>
+                    </p> 
+                    <hr>
+                  <h6>Immediate Notice Must Be Given To The Police</h6>
+                </div>
+                <div class="insurediv mt-3">
+                    <ol style="list-style: none;">
+                        <li>
+                            <label for="policynumber">Policy Number</label>
+                            <input name="policynumber" id="policynumber">
+                        </li>
+                        <li>
+                            <label for="Name">Name</label>
+                            <input name="name" id="name">
+                        </li>
+                        <li>
+                            <label for="address">Address</label>
+                            <input name="address" id="address">
+                        </li>
+                        <li>
+                            <label for="telno">Tel No</label>
+                            <input name="telno" id="telno">
+                        </li>
+                    </ol>
+                        <ol class="insureinputlist">
+                            <li>
+                                <h6><b>Please give the following information about your loss</b></h6>
+                                <ol style="list-style: lower-alpha;">
+                                    <li>
+                                        <label for="time_dateofloss"> Time and date of los</label>
+                                        <input type="datetime-local" name="time_dateofloss" id="time_dateofloss">
+                                    </li>
+                                    <li>
+                                        <label for="locationofloss">Location of loss</label>
+                                        <input name="locationofloss" id="locationofloss">
+                                    </li>
+                                    <li>
+                                        <label for="descriptionofloss">Describe fully how the loss occurred</label>
+                                        <textarea name="descriptionofloss" id="descriptionofloss" style="width: 60%;"></textarea>
+                                    </li>
+                                    <li>
+                                        <label for="steps_to_discover_guilty_person">What steps have been taken to discover the guilty person(s) and to trace and recover the stolen goods</label>
+                                        <textarea name="steps_to_discover_guilty_person" id="steps_to_discover_guilty_person" style="width: 60%;"></textarea>
+                                    </li>
+                                    <li>
+                                        <label for="steps_to_preserver_damaged_goods">What steps have been taken to preserve the damaged goods</label>
+                                        <textarea name="steps_to_preserver_damaged_goods" id="steps_to_preserver_damaged_goods" style="width: 60%;"></textarea>
+                                    </li>
+                                </ol>
+                            </li>  
+                            <li>
+                                <label for="ispolice_notified">Have the Police been notified</label>
+                                <select name="ispolice_notified" id="ispolice_notified">
+                                    <option value=""selected disabled>please select</option>
+                                    <option value="true">True</option>
+                                    <option value="false">False</option>
+                                </select>
+                                <label for="station_notified">If so, at which station</label>
+                                <input type="text" name="station_notified" id="station_notified">
+                            </li> 
+                            <li class="mt-2">
+                                <label for="date_of_notification">Date of notification</label>
+                                <input type="date" name="date_of_notification" id="date_of_notification">
+                            </li>
+                            <li class="mt-2">
+                                <label for="what_are_registno_vehicle_involve">What are the registration numbers of the vehicles involved</label>
+                                <input type="text" name="what_are_registno_vehicle_involve" id="what_are_registno_vehicle_involve">
+                            </li>
+                            <li>
+                                <label for="where_remaining_goods_can_be_inspected">State where the remaining goods can be inspected</label>
+                                <input type="text" name="where_remaining_goods_can_be_inspected" id="where_remaining_goods_can_be_inspected">
+                            </li>
+                            <li>
+                                <label for="were_goods_accompanied">Were the goods accompanied whilst in transit</label>
+                                <select name="were_goods_accompanied" id="were_goods_accompanied">
+                                    <option value=""selected disabled>please select</option>
+                                    <option value="true">True</option>
+                                    <option value="false">False</option>
+                                </select>
+                                <label for="goods_accompanied_by_whom">If so, by whom   </label>
+                                <input type="text" name="goods_accompanied_by_whom" id="goods_accompanied_by_whom">   
+                            </li> 
+                            <li>
+                                <label for="fullnamesandaddress_of_whoc_accompany_goods">Please state the full names and addresses of those who accompany the goods in transit</label>
+                                <textarea name="fullnamesandaddress_of_whoc_accompany_goods" id="fullnamesandaddress_of_whoc_accompany_goods" style="width: 60%;"></textarea>
+                            </li>
+                            <li>
+                                <label for="isanybody_suspected">Is anybody suspected of the thef</label>
+                                <select name="isanybody_suspected" id="isanybody_suspected">
+                                    <option value=""selected disabled>please select</option>
+                                    <option value="true">True</option>
+                                    <option value="false">False</option>
+                                </select>
+                                <label for="isanybody_suspected_details">If so, give full particulars  </label>
+                                <textarea name="isanybody_suspected_details" id="isanybody_suspected_details" style="width: 60%;"></textarea>
+                            </li>
+                            
+                            <li>
+                                <label for="are_there_other_insurace_for_claimgoods">Are there other insurances on the goods claimed for</label>
+                                <select name="are_there_other_insurace_for_claimgoods" id="are_there_other_insurace_for_claimgoods">
+                                    <option value=""selected disabled>please select</option>
+                                    <option value="true">True</option>
+                                    <option value="false">False</option>
+                                </select>
+                                <label for="other_claimgoods_insueres"> If so, give the name of the Insurer(s) </label>
+                                <textarea name="isanybody_suspected_details" id="isanybody_suspected_details" style="width: 60%;"></textarea>
+                            </li>
+                            <li>
+                                <p><b>please input a tabled list of  particulars of goods lost and damaged  with the following table header:</b></p>
+                                <ol>
+                                    <li><h6>S/No</h6></li>
+                                    <li><h6>Description</h6></li>
+                                    <li><h6>Description</h6></li>
+                                </ol>
+                                <p><b> and also with the total amount at the bottom</b></p>
+                            <input type="file" name="particulars_of_lost_goodsfile" id="particulars_of_lost_goodsfile">
+                            </li>
+                    </ol> 
+                    <hr>
+                    <div class="mt-4">
+                      <p>I/We hereby declare that, to the best of my/our knowledge and belief, the foregoing particulars and the details given are true and correct</p>
+                    </div>
+                    <div class="mt-4 row">
+                        <div class="col-6">
+                            <label for="declarantsignature">Signature</label>
+                            <input type="file" name="declarantsignature" id="declarantsignature">
+                        </div>
+                       <div class="col-6">
+                            <label for="declaringdate">Date</label>
+                            <input type="date" name="declaringdate" id="declaringdate">
+                       </div>
+                    </div>
+                </div>
+                <div class="mt-4" style="text-align: center;">
+                    <button id="submitinfo" name="submitinfo" type="submit" class="btn btn-sm btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

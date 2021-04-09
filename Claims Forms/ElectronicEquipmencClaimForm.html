@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment CLaim Form</title>
+    <link rel="stylesheet" href="../Styles/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Styles/site.css">
+    <style>
+        .insureinputlist h6 {
+            margin-left: 28px; font-size: 14px;
+        }
+       /* .insureinputlist {
+           list-style: none;
+       }  */
+       
+    </style>
+</head>
+<body>
+    <div class="container risk_container">
+        <div class="risk_inner">
+            <form>
+                <div class="about">
+                    <p>The issue of this form is NOT an admission of liability on the part of
+                    the Company. Please answer all questions fully and return form without delay
+                    to<br>
+                    <span style="font-weight: 1000;">
+                        <bold>ALLIANZ NIGERIA INSURANCE PLC</bold>
+                    </span>
+                    </p> 
+                    <hr>
+                </div>
+                <div class="insurediv mt-3">
+                    <ol class="insureinputlist">
+                        <li>
+                            <label for="insurednumber">Name of insured</label>
+                            <input name="insurednumber" id="insurednumber">
+                        </li>
+                        <li>
+                            <label for="policynumber">Policy Number</label>
+                            <input name="policynumber" id="policynumber">
+                        </li>
+                        <li>
+                            <label for="address">Address</label>
+                            <input name="address" id="address">
+                        </li>
+                        <li>
+                            <label for="telephone">Telephone No</label>
+                            <input name="telephone" id="telephone">
+                        </li>
+                        <li>
+                            <h6>Details of Equipment lost or damaged:-</h6>
+                            <ol style="list-style: lower-alpha;">
+                                <li>
+                                    <label for="serialno">Serial No</label>
+                                    <input type="text" name="serialno" id="serialno">
+                                </li>
+                                <li>
+                                    <label for="make">Make</label>
+                                    <input type="text" name="make" id="make">
+                                </li>
+                                <li>
+                                    <label for="purchasedate">Date of Purchase</label>
+                                    <input type="text" name="purchasedate" id="purchasedate">
+                                </li>
+                                <li>
+                                    <label for="costprice">Cost Price</label>
+                                    <input type="text" name="costprice" id="costprice">
+                                </li>
+                                <li>
+                                    <label for="claimamount">Claim Amount</label>
+                                    <input type="text" name="claimamount" id="claimamount">
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h6>Please State:-</h6>
+                            <ol style="list-style: lower-alpha;">
+                                <li>
+                                    <label for="lossdatetime">Date and hour of loss/damage, if known</label>
+                                    <input type="datetime-local" name="lossdatetime" id="lossdatetime">
+                                </li>
+                                <li>
+                                    <label for="lossplace">Where loss/damage occured</label>
+                                    <input type="text" name="lossplace" id="lossplace">
+                                </li>
+                                <li>
+                                    <label for="damagepart">Part damaged and extent</label>
+                                    <input type="text" name="damagepart" id="damagepart">
+                                </li>
+                                <li>
+                                    <label for="equipmentinspectedplace">Where Equipment may be inspected</label>
+                                    <input type="text" name="equipmentinspectedplace" id="equipmentinspectedplace">
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <label for="losscurcircumstance"> Please give Full account of circumstances in which loss/damage was sustained</label>
+                            <textarea name="losscurcircumstance" id="losscurcircumstance" style="width: 50%; margin-left: 27px;"></textarea>
+                        </li>
+                        <li>
+                            <h6>In the event of loss by theft:-</h6>
+                            <ol style="list-style: lower-alpha;">
+                                <li>
+                                    <label for="ispoliceinfomed">Has the police be informed?</label>
+                                    <select name="ispoliceinfomed" id="ispoliceinfomed" >
+                                        <option selected disabled="disabled">please select</option>
+                                        <option value="true">true</option>
+                                        <option value="false">false</option>
+                                    </select> 
+                                    <span >if so when and which police Station</span> <br>
+                                    <label for="dateinformed">Date</label>
+                                    <input type="date" name="dateinformed" id="dateinformed" style="width: 30%;">
+                                    <label for="policestation">Where</label>
+                                    <input type="text" name="policestation" id="policestation" style="width: 30%;">
+                                <li>
+                                    <label for="isSoleowner">Are you the sole owner of the Equipment loss/damage</label>
+                                    <select name="isSoleowner" id="isSoleowner" >
+                                        <option selected disabled="disabled">please select</option>
+                                        <option value="true">true</option>
+                                        <option value="false">false</option>
+                                    </select>    
+                                    <label for="notownerdetails">If not give full details</label><br>  
+                                    <textarea name="notownerdetails" id="notownerdetails" style="width: 50%;"></textarea>                    
+                                <li>
+                                    <label for="damagepart">Part damaged and extent</label>
+                                    <input type="text" name="damagepart" id="damagepart">
+                                </li>
+                                <li>
+                                    <label for="equipmentinspectedplace">Where Equipment may be inspected</label>
+                                    <input type="text" name="equipmentinspectedplace" id="equipmentinspectedplace">
+                                </li>
+                                <li>
+                                    <span for="issuerdetails">if loss/damage involved to a Third party, state name and address and details of the issuers</span><br>
+                                    <textarea name="issuerdetails" id="issuerdetails" style="width: 50%; margin-left: 27px;"></textarea>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                    <hr>
+                    <div style="margin-top: 80px;">
+                        <h6>Declaration:</h6>
+                        <label for="Declarantname">I/We</label>
+                        <input name="Declarantname" id="Declarantname"class="nonoutlineinput"style="width: 80%;" ><br>
+                        <label for="declarantposition">(position) of the insured and on behalf of the insured declare the above answers to be true 
+                            and correct AND acknowledge that the issuer may make its decision  on indemnity having regard to these answers
+                        </label>
+                        <input type="text" name="declarantposition" id="declarantposition" class="nonoutlineinput">
+                    </div>
+                    <div class="mt-4 row">
+                        <div class="col-6">
+                            <label for="declarantsignature">Signature</label>
+                            <input type="file" name="declarantsignature" id="declarantsignature">
+                        </div>
+                       <div class="col-6">
+                            <label for="declaringdate">Date</label>
+                            <input type="date" name="declaringdate" id="declaringdate">
+                       </div>
+                    </div>
+                </div>
+                <div class="mt-4" style="text-align: center;">
+                    <button id="submitinfo" name="submitinfo" type="submit" class="btn btn-sm btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

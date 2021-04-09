@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Styles/site.css">
+    <title>Group Personal Accident Claim Form</title>
+    <style>
+        .insideol ol{
+            list-style: lower-alpha;
+        }
+    </style>
+</head>
+<body>
+    <div class="container risk_container">
+        <div class="risk_inner">
+            <form>
+                <div class="about">
+                    <p>The issue of this form is NOT an admission of liability on the part of the
+                         Company. Please answer all questions fully and return form without delay to<br>
+                         <span style="font-weight: 1000;">
+                            <bold>ALLIANZ NIGERIA INSURANCE PLC</bold>
+                        </span>
+                    </p>
+                    <hr>
+                </div>
+                <div class="insurediv mt-3">
+                    <div>
+                        <ol class="insureinputlist">
+                            <li>
+                                <label for="policyno">Policy No</label>
+                                <input type="text" name="policyno" id="policyno">
+                            </li>
+                            <li>
+                                <label for="employer">Employer</label>
+                                <input type="text" name="employer" id="employer">
+                            </li>
+                            <li>
+                                <label for="address">Address</label>
+                                <input type="text" name="address" id="address">
+                            </li>
+                            <li>
+                                <label for="trade_orbusiness">Trade or Business</label>
+                                <input type="text" name="trade_orbusiness" id="trade_orbusiness">
+                            </li>
+                            <li>
+                                <label for="number_of_employee">Number of Employee</label>
+                                <input type="text" name="number_of_employee" id="number_of_employee">
+                            </li>
+                        </ol>
+                        <div>
+                            <h6>The following information is to be furnished by the employer, and or full details should be given in
+                                order to avoid delay and the trouble to Policyholders of subsequent correspondence
+                            </h6>
+                        </div>
+                        <ol class="insideol">
+                            <li>
+                                <ol>
+                                    <li>
+                                        <label for="fullname_of_injuredperson">Full Name of Injured Person</label>
+                                        <input type="text" name="fullname_of_injuredperson" id="fullname_of_injuredperson">
+                                    </li>
+                                    <li>
+                                        <label for="age_of_injuredperson">Age of Injured Person</label>
+                                        <input type="text" name="age_of_injuredperson" id="age_of_injuredperson">
+                                    </li>
+                                    <li>
+                                        <label for="occupation_of_injuredperson">Occupation of Injured Person</label>
+                                        <input type="text" name="occupation_of_injuredperson" id="occupation_of_injuredperson">
+                                    </li>
+                                    <li>
+                                        <label for="fullname_of_injuredperson">Full Name of Injured Person</label>
+                                        <input type="text" name="fullname_of_injuredperson" id="fullname_of_injuredperson">
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>State fully the Nature of the injuries(Note: if Accident Happenedin connection
+                                    with any Machinery, Kindly State type of Machinery Involved
+                                </p>
+                                <textarea name="natureofinjuries" id="natureofinjuries"style="width:60%"></textarea>
+                            </li>
+                            <li>
+                                <ol>
+                                    <li>
+                                        <p>State Fully the work upon which the injured the person was Engaged
+                                            at the Time of Accident
+                                        </p>
+                                        <textarea name="work_upon_which_injury_was_sustained" id="work_upon_which_injury_was_sustained"style="width:60%"></textarea>
+                                    </li> 
+                                    <li>
+                                        <p>
+                                            Describe Fully How the Accident Happened
+                                        </p>
+                                        <textarea name="how_accident_happened" id="how_accident_happened"style="width:60%"></textarea>
+                                    </li>  
+                                </ol>
+                            </li>
+                            <li>
+                                <label for="date_time_of_accident">Date and Hour of Accident</label>
+                                <input type="date" name="date_time_of_accident" id="date_time_of_accident">
+                            </li>
+                            <li>
+                                <label for="where_accident_occured">Where Did the Accident Occur</label>
+                                <input type="text" name="where_accident_occured" id="where_accident_occured">
+                            </li>
+                            <li>
+                                <label for="isinjuredperson_recieving_treatment">Is the Injured Person Recieving Medical Attention</label>
+                                <select name="isinjuredperson_recieving_treatment" id="isinjuredperson_recieving_treatment">
+                                    <option value="" selected disabled>please select</option>
+                                    <option value="true">True</option>
+                                    <option value="false">False</option>
+                                </select>
+                                <p >If so, State the Name and Address of the Medical Attendant or Name and
+                                    Address of Institution and whether in-Patient or Out-Patient
+                                </p>
+                                <label for="medicalattendant_or_instiution_name">Medical Attendant/Institution Name</label>
+                                <input type="text" name="medicalattendant_or_instiution_name" id="medicalattendant_or_instiution_name"><br>
+                                <label for="medicalattendant_or_instiution_address">Medical Attendant/Institution Address</label>
+                                <input type="text" name="medicalattendant_or_instiution_address" id="medicalattendant_or_instiution_address"><br>
+                                <label for="isinpatient_or_outpatient">is it In-Patient/Out-Patient</label>
+                                <select name="isinpatient_or_outpatient" id="isinpatient_or_outpatient">
+                                    <option value="" selected disabled>please select</option>
+                                    <option value="in-patient">In-Patient</option>
+                                    <option value="out-patient">Out-Patient</option>
+                                </select>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="mt-5">
+                            <h6 style="text-decoration: underline; text-align: center;">STATEMENT OF INJURED PERSON'S EARNINGS</h6>
+                            <span>
+                                Statement of injured Person's Monthly earnings including all allowances while
+                                in the 
+                            </span>
+                            <input class="nonoutlineinput" type="text" name="statement_while_in_d_employment_of" id="statement_while_in_d_employment_of">
+                            <span>
+                                in each month during the <b>12 months pror to the date of the accident</b>or 
+                                during such shorter period as he may have been employed.if absent from work or at time lost,state,reaseon
+                            </span>
+                    </div>
+                    <div class="mt-3">
+                        <p>
+                            I herby certify that the information given above is 
+                            true and correct to the best of my knowledge and belief
+                        </p>
+                    </div>
+                    <div class="mt-3 row">
+                        <div class="col-sm-6">
+                            <label for="employerssignature">Employer's Signature</label>
+                            <input type="file" name="employerssignature" id="employerssignature">
+                        </div>
+                        <div class="col-sm-6 sign">
+                            <label for="signaturedate">Date</label>
+                            <input type="date" name="signaturedate" id="signaturedate">
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4" style="text-align: center;">
+                    <button id="submitinfo" name="submitinfo" type="submit" class="btn btn-sm btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

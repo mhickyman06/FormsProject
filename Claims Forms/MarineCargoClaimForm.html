@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Styles/site.css">
+    <title>Marine Cargo Claim Form</title>
+    <style>
+          .insurediv h6{
+            font-size: 14px;
+            font-family: 'Calibri', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container risk_container">
+        <div class="risk_inner">
+            <form>
+                <div class="about">
+                    <p>The issue of this form is NOT an admission of liability on the part of the
+                         Company. Please answer all questions fully and return form without delay to<br>
+                         <span style="font-weight: 1000;">
+                            <bold>ALLIANZ NIGERIA INSURANCE PLC</bold>
+                        </span>
+                    </p>
+                    <hr>
+                </div>
+                <div class="insurediv mt-3">
+                    <h6>Immediate Notice Must Be Given To The Police</h6>
+                    <div>
+                        <ol class="insureinputlist">
+                            <li>
+                                <label for="insurednumber">Insured Name</label>
+                                <input type="text" name="insurednumber" id="insurednumber">
+                            </li>
+                            <li>
+                                <label for="address">Address</label>
+                                <input type="text" name="insurednumber" id="insurednumber">
+                            </li>
+                            <li>
+                                <label for="tellno">Tel. No</label>
+                                <input type="text" name="tellno" id="tellno">
+                            </li>
+                            <li>
+                                <label for="businessinsured">Business of Insured</label>
+                                <input type="text" name="businessinsured" id="businessinsured">
+                            </li>
+                            <li>
+                                <label for="policynumber">Policy No</label>
+                                <input type="text" name="policynumber" id="policynumber">
+                            </li>
+                            <li>
+                                <label for="goodsnature">Nature of Goods</label>
+                                <input type="text" name="goodsnature" id="goodsnature">
+                            </li>
+                            <li>
+                                <label for="goodsdelivereddate">Date Goods were delivered</label>
+                                <input type="date" name="goodsdelivereddate" id="goodsdelivereddate">
+                            </li>
+                            <li>
+                                <label for="consignmentvalue">Value of Consignment</label>
+                                <input type="text" name="consignmentvalue" id="consignmentvalue">
+                            </li>
+                            <li>
+                                <label for="losspointdiscovered">What point was the loss discovered?</label>
+                                <input type="text" name="losspointdiscovered" id="losspointdiscovered">
+                            </li>
+                            <li>
+                                <label for="losscircumstances">Circumstances for loss</label>
+                                <input type="text" name="losscircumstances" id="losscircumstances">
+                            </li>
+                            <li>
+                                <label for="lossamount">Amount of Loss</label>
+                                <input type="text" name="lossamount" id="lossamount">
+                            </li>
+                            <li>
+                                <label for="salvagevalue">Value of Salvage, if any</label>
+                                <input type="text" name="salvagevalue" id="salvagevalue">
+                            </li>
+                            <li>
+                                <label for="consignmentvalue">Value of Consignment</label>
+                                <input type="text" name="consignmentvalue" id="consignmentvalue">
+                            </li>
+                            <li>
+                                <label for="consignmentrecievedcondition">Condition of consignment when received:</label>
+                                <input type="text" name="consignmentrecievedcondition" id="consignmentrecievedcondition">
+                            </li>
+                            <li>
+                                <label for="carrierparticularsdetails">If claim for recovery made against carrier or third parties give 
+                                    particulars and result (Correspondences should be attached to this form)
+                                </label>
+                                <textarea name="carrierparticularsdetails" id="carrierparticularsdetails" style="width: 60%;" ></textarea>
+                            </li>
+                            <li>
+                                <label for="isthereloss">Is there any other insurance covering the loss?</label>
+                                <select name="isthereloss" id="isthereloss">
+                                    <option value="" selected disabled>please select</option>
+                                    <option value="true">True</option>
+                                    <option value="false">False</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="intresedcompanycovernature">If so, state the nature of cover & company interested </label>
+                                <textarea name="intresedcompanycovernature" id="intresedcompanycovernature" style="width: 60%;" ></textarea>
+                            </li>
+                        </ol>
+                    </div>
+                    <hr>
+                    <div class="mt-5">
+                        <h6>Declaration</h6>
+                        <label for="declarantname">I/We further declare that the details of loss mentioned on the other side,
+                             and insured under the Marine certificate number
+                        </label>
+                        <input type="text" name="declarantname" id="declarantname" class="nonoutlineinput"><br>
+                        <label for="declaringdate">Dated, Under the policy of Marine Insurance with<b> ALLIANZ NIGERIA INSURANCE PLC was damaged or short landed to the</b>
+                        </label>
+                        <input type="date" name="declaringdate" id="declaringdate"><br>
+                        <label for="futherdeclarantname">I/We further declare that</label>
+                        <input type="text" name="futherdeclarantname" id="futherdeclarantname" class="nonoutlineinput" style="width: 60%;"><br>
+                        <label for="witness">Witness my/our hand this</label>
+                        <input type="text" name="witness" id="witness" class="nonoutlineinput" style="width: 60%;">
+                    </div>
+                    <div class="mt-3 row">
+                        <div class="col-sm-6">
+                            <label for="declarantsignature">Signature</label>
+                            <input type="file" name="declarantsignature" id="declarantsignature" >
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="signaturedate">Date</label>
+                            <input type="date" name="signaturedate" id="signaturedate" >
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4" style="text-align: center;">
+                    <button id="submitinfo" name="submitinfo" type="submit" class="btn btn-sm btn-primary">Submit</button>
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

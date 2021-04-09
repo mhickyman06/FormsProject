@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fidelity Claim Form</title>
+    <link rel="stylesheet" href="../Styles/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Styles/site.css">
+    <style>
+       .about h6{
+            font-size: 13px;
+            font-weight: bold;
+            font-family: ' Calibri ', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        }
+        .insureinputlist h6{
+            margin-left: 29px;
+            font-size: 12px;
+            font-weight: bold;
+            font-family: ' Calibri ', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        }
+        .insureinputlist ol{
+            list-style: lower-alpha;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container risk_container">
+        <div class="risk_inner">
+            <form>
+                <div class="about">
+                    <p>The issue of this form is NOT an admission of liability on the part of
+                    the Company. Please answer all questions fully and return form without delay
+                    to<br>
+                    <span style="font-weight: 1000;">
+                        <bold>ALLIANZ NIGERIA INSURANCE PLC</bold>
+                    </span>
+                    </p> 
+                    <hr>
+                  <h6>Immediate Notice Must Be Given To The Police</h6>
+                </div>
+                <div class="insurediv mt-3">
+                    <ol class="insureinputlist">
+                        <li>
+                            <label for="policynumber">Policy Number</label>
+                            <input name="policynumber" id="policynumber">
+                        </li>
+                        <li>
+                            <h6>Insured</h6>
+                            <ol>
+                                <li>
+                                    <label for="name">Name</label>
+                                    <input name="name" id="name">
+                                </li>
+                                <li>
+                                    <label for="occupation">Occupation</label>
+                                    <input name="occupation" id="occupation">
+                                </li>
+                                <li>
+                                    <label for="phoneno">Tel No</label>
+                                    <input name="phoneno" id="phoneno">
+                                </li>
+                                <li>
+                                    <label for="address">Address</label>
+                                    <input name="address" id="address">
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h6>General Information</h6>
+                            <ol>
+                                <li>
+                                    <label for="defaultername">Name of defaulter</label>
+                                    <input name="defaultername" id="defaultername">
+                                </li>
+                                <li>
+                                    <label for="address">Address</label>
+                                    <input name="address" id="address">
+                                </li>
+                                <li>
+                                    <label for="jobdescription">job description at the day of default</label>
+                                    <input name="jobdescription" id="jobdescription">
+                                </li>
+                                <li>
+                                    <label for="dafalcationperiod">Known period of defalcation</label>
+                                    <input name="dafalcationperiod" id="dafalcationperiod">
+                                </li>
+                                <li>
+                                    <label for="defalcationdate">Exact date of discovery of defalcation</label>
+                                    <input type="date" name="defalcationdate" id="defalcationdate">
+                                </li>
+                                <li>
+                                    <label for="defaultersworklastday">Alleged defaulter's last day at work</label>
+                                    <input type="date" name="defaultersworklastday" id="defaultersworklastday">
+                                </li>
+                                <li>
+                                    <label for="dismisedorresigned">Whether dismissed or resigned</label>
+                                    <select name="dismisedorresigned" id="dismisedorresigned">
+                                        <option value="" selected disabled="disabled">please select</option>
+                                        <option value="true">true</option>
+                                        <option value="false">false</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label for="defaultmanner">In what manner, has the default been carried out</label>
+                                    <input name="defaultmanner" id="defaultmanner">
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h6>Others</h6>
+                            <ol>
+                                <li>
+                                    <label for="anypreviouslydoubt">Have you previously had any reason(s) to doubt the alleged defaulter's integrity</label>
+                                    <select name="anypreviouslydoubt" id="anypreviouslydoubt">
+                                        <option value="" selected disabled="disabled">please select</option>
+                                        <option value="true">true</option>
+                                        <option value="false">false</option>
+                                    </select>                               
+                                <li>
+                                    <label for="ispoliceinformed">Have the Police been notified?</label>
+                                    <select name="ispoliceinformed" id="ispoliceinformed">
+                                        <option value="" selected disabled="disabled">please select</option>
+                                        <option value="true">true</option>
+                                        <option value="false">false</option>
+                                    </select>                                    
+                                     <label for="reseonsfornot">If not, please state reason(s)</label><br>
+                                     <textarea name="reseonsfornot" id="reseonsfornot" style="width: 50%;"></textarea>
+                                </li>
+                                <li>
+                                    <label for="isdefaulterchallenged">Have you challenged the alleged defaulter with the accusation contained herein?</label>
+                                    <select name="isdefaulterchallenged" id="isdefaulterchallenged">
+                                        <option value="" selected disabled="disabled">please select</option>
+                                        <option value="true">true</option>
+                                        <option value="false">false</option>
+                                    </select>                                    
+                                     <label for="defaultersreason">If so, what was his reaction or reply and has he offered any restitution?</label><br>
+                                     <textarea name="defaultersreason" id="defaultersreason" style="width: 50%;"></textarea>
+                                </li>
+                                <li>
+                                    <label for="willingtoinstitute">
+                                        Are you willing to institute, in your own name, civil proceedings against the 
+                                        alleged defaulter for recovery of the amount claimed
+                                    </label>
+                                    <select name="willingtoinstitute" id="willingtoinstitute">
+                                        <option value="" selected disabled="disabled">please select</option>
+                                        <option value="true">true</option>
+                                        <option value="false">false</option>
+                                    </select>  
+                                </li>
+                                <li>
+                                    <label for="precautionstopreventfurtherloss">What precautions have been introduced to prevent a further loss in similar circumstances?</label>
+                                    <input name="precautionstopreventfurtherloss" id="precautionstopreventfurtherloss">
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h6>Undertaking</h6>
+                            <p>I/We declare the foregoing particulars to be true and correct
+                                and undertake to render every assistance in my/our power in dealing with the matter
+                            </p>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label for="signatorydate">Date</label>
+                                    <input name="signatorydate" id="signatorydate">
+                                </div>
+                                <div class="col-sm-5">
+                                    <label for="signature">Signature</label>
+                                    <input type="file" name="signature" id="signature">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="signatoryaddress">Address</label>
+                                <input name="signatoryaddress" id="signatoryaddress">
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="mt-4" style="text-align: center;">
+                    <button id="submitinfo" name="submitinfo" type="submit" class="btn btn-sm btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
