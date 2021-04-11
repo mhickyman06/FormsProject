@@ -257,60 +257,404 @@
                                         </ol>
                                     </div>
                                     <div class="mt-5">
+                                        <h6>SECTION II (Please give a brief description of the item(s) to be insured)</h6>
+                                        <p><b> please input a tabled list document just like the image below:</b></p>
+                                        <!-- <div class="row">
+                                            <div class="col-6">
+                                                <img src="../images/fireandspecialperilsimg1.jpg" width="600px" height="400px">
+                                            </div>
+                                        </div>
+                                        <input type="file" name="items_to_be_insured_documents" id="items_to_be_insured_documents" class="mt-3"> -->
                                         <ol style="list-style: none;">
                                             <li>
                                                 <span><b>Property Insured</b></span>
                                                 <ol style="list-style: lower-alpha; margin-top: 30px;">
                                                     <li>
                                                         <p>Building</p>
+                                                        <textarea name="building_description" id="building_description" style="width: 60%;"></textarea>
+                                                        <br>
                                                         <label for="suminsuredbulding">Sum Insured</label>
                                                          <input type="text" name="suminsuredbulding" id="suminsuredbulding">
                                                      </li>
-                                                   
-                                                    <li>
-                                                        <p>Goods held in trust or on commission for which the insured is responsible</p>
-                                                        <label for="suminsuredgoodsheld">Sum Insured</label>
-                                                         <input type="text" name="suminsuredgoodsheld" id="suminsuredgoodsheld">
-                                                     </li>
                                                      <li>
-                                                        <p>Furniture, fixtures, fittings and appliances used in your business</p>
+                                                        <p>Furniture, fixtures, fittings (state the items to be covered or provide or provide a detailed list)</p>
+                                                        <textarea name="building_description" id="building_description" style="width: 60%;"></textarea><br>
+                                                        <input type="file" name="furniture_fixtures_detailed_list" id="furniture_fixtures_detailed_list"><br>
                                                         <label for="suminsuredfurnitureusedinbusiness">Sum Insured</label>
                                                          <input type="text" name="suminsuredfurnitureusedinbusiness" id="suminsuredfurnitureusedinbusiness">
                                                      </li>
+                                                    <li>
+                                                        <p>Plants & Machinery (state the items to be </p>
+                                                        <textarea name="plants_machine_description" id="plants_machine_description" style="width: 60%;"></textarea><br>
+                                                        <input type="file" name="plants_machine_detailed_list" id="plants_machine_detailed_list"><br>
+                                                        <label for="suminsuredgoodsheld">Sum Insured</label>
+                                                         <input type="text" name="suminsuredplants_machine" id="suminsuredplants_machine">
+                                                     </li>
+                                                     
                                                      <li>
-                                                        <p>Stock in trade</p>
+                                                        <p>Stock in trade consisting of (describe exhaustively)</p>
+                                                        <textarea name="stocktrade_description" id="stocktrade_description" style="width: 60%;"></textarea><br>
                                                         <label for="suminsuredstockintrade">Sum Insured</label>
                                                          <input type="text" name="suminsuredstockintrade" id="suminsuredstockintrade">
                                                      </li>
                                                      <li>
-                                                        <p>Coins and currency notes in a locked safe</p>
+                                                        <p>state the items to be covered or provide a detailed list</p>
+                                                        <textarea name="personal_effect_description" id="personal_effect_description" style="width: 60%;"></textarea><br>
+                                                        <input type="file" name="personal_effect_detailed_lists" id="personal_effect_detailed_lists"><br>
                                                         <label for="suminsuredcoinsandcurrencyinlockedsafe">Sum Insured</label>
                                                          <input type="text" name="suminsuredcoinsandcurrencyinlockedsafe" id="suminsuredcoinsandcurrencyinlockedsafe">
-                                                     </li>
-                                                     <li>
-                                                        <p>Valuables</p>
-                                                        <label for="suminsuredvaluables">Sum Insured</label>
-                                                         <input type="text" name="suminsuredvaluables" id="suminsuredvaluables">
                                                      </li>
                                                      <li>
                                                         <label for="others">others specify</label>
                                                          <input style="width:20%;" type="text" name="others" id="others">
                                                          <label for="suminsuredothers">Sum Insured</label>
-                                                        <input style="width: 20%;" type="text" name="suminsuredothers" id="suminsuredothers">
                                                      </li>
                                                      <li>
-                                                        <p></p>
                                                         <label for="totalsuminsured">Total Sum Insured</label>
                                                          <input type="text" name="totalsuminsured" id="totalsuminsured">
                                                      </li>
                                                 </ol>
+                                                <ol style="list-style: disc; margin-top: 30px;">
+                                                    <li>
+                                                        <label for="building_height">What is the height of the building in storeys</label>
+                                                        <input type="text" name="building_height" id="building_height">
+                                                    </li>
+                                                    <li>
+                                                        <label for="of_what_walls_constructed">Of what are the walls constructed</label>
+                                                        <input type="text" name="of_what_walls_constructed" id="of_what_walls_constructed">
+                                                    </li>
+                                                    <li>
+                                                        <label for="of_what_roof_constructed">•	Of what is the roof constructed</label>
+                                                        <input type="text" name="of_what_roof_constructed" id="of_what_roof_constructed">
+                                                    </li>
+                                                    <li>
+                                                        <label for="how_long_have_conducted_business_in_premise">How long have you conducted business in this premise</label>
+                                                        <input type="text" name="how_long_have_conducted_business_in_premise" id="how_long_have_conducted_business_in_premise">
+                                                    </li>
+                                                    <li>
+                                                        <label for="is_building_solely_in_occupation">Is the building solely in your own occupation?</label>
+                                                        <select name="is_building_solely_in_occupation" id="is_building_solely_in_occupation">
+                                                            <option value="" selected disabled>please select</option>
+                                                            <option value="true">True</option>
+                                                            <option value="false">False</option>
+                                                        </select><br>
+                                                        <label for="is_building_solely_in_occupation_details">If not, state how the remainders are occupied </label>
+                                                        <textarea name="is_building_solely_in_occupation_details" id="is_building_solely_in_occupation_details" style="width: 60%;"></textarea>
+                                                    </li>
+                                                    <li>
+                                                        <label for="are_premises_attached">Are the premises attached</label>
+                                                        <select name="are_premises_attached" id="are_premises_attached">
+                                                            <option value="" selected disabled>please select</option>
+                                                            <option value="true">True</option>
+                                                            <option value="false">False</option>
+                                                        </select><br>
+                                                        <label for="are_premises_attached_details">If so, state distance, construction and nature of occupancy of adjacent or  Adjoining buildings</label>
+                                                        <textarea name="are_premises_attached_details" id="are_premises_attached_details" style="width: 60%;"></textarea>
+                                                    </li>
+                                                    <li>
+                                                        <label for="are_hazardous_materials_kept_in_premises">Are hazardous materials or any petroleum products kept the premises</label>
+                                                        <select name="are_hazardous_materials_kept_in_premises" id="are_hazardous_materials_kept_in_premises">
+                                                            <option value="" selected disabled>please select</option>
+                                                            <option value="true">True</option>
+                                                            <option value="false">False</option>
+                                                        </select><br>
+                                                        <label for="are_hazardous_materials_kept_in_premises_details">If not, give details </label>
+                                                        <textarea name="are_hazardous_materials_kept_in_premises_details" id="are_hazardous_materials_kept_in_premises_details" style="width: 60%;"></textarea>
+                                                    </li>
+                                                    <li>
+                                                        <label for="is_any_process_carried_on">Is any process of manufacture carried on</label>
+                                                        <select name="is_any_process_carried_on" id="is_any_process_carried_on">
+                                                            <option value="" selected disabled>please select</option>
+                                                            <option value="true">True</option>
+                                                            <option value="false">False</option>
+                                                        </select><br>
+                                                        <label for="is_any_process_carried_on_details">If not, state full particulars</label>
+                                                        <textarea name="is_any_process_carried_on_details" id="is_any_process_carried_on_details" style="width: 60%;"></textarea>
+                                                    </li>
+                                                    <li>
+                                                        <label for="how_are_premises_lighted">How are the premises lighted</label>
+                                                        <textarea name="how_are_premises_lighted" id="how_are_premises_lighted" style="width: 60%;"></textarea>
+                                                    </li>
+                                                    <li>
+                                                        <label for="are_there_other_insurance_on_property">Are there other insurances on the property proposed for this insurance</label>
+                                                        <select name="are_there_other_insurance_on_property" id="are_there_other_insurance_on_property">
+                                                            <option value="" selected disabled>please select</option>
+                                                            <option value="true">True</option>
+                                                            <option value="false">False</option>
+                                                        </select>
+                                                        <label for="are_there_other_insurance_on_property_details">If so, Please state names of insurers and sums insured </label>
+                                                        <textarea name="are_there_other_insurance_on_property_details" id="are_there_other_insurance_on_property_details" style="width: 60%;"></textarea>
+                                                    </li>
+                                                    <li>
+                                                        <label for="have_previously_insured_against_fire">Have you previously insured against fire or additional perils</label>
+                                                        <select name="have_previously_insured_against_fire" id="have_previously_insured_against_fire">
+                                                            <option value="" selected disabled>please select</option>
+                                                            <option value="true">True</option>
+                                                            <option value="false">False</option>
+                                                        </select>
+                                                        <label for="have_previously_insured_against_fire_details">If so, give details including names of insurers</label>
+                                                        <textarea name="have_previously_insured_against_fire_details" id="have_previously_insured_against_fire_details" style="width: 60%;"></textarea>
+                                                    </li>
+                                                    <li>
+                                                        <p>How long have you conducted business</p>
+                                                        <ol style="list-style: lower-roman;">
+                                                            <li>
+                                                                <label for="how_long_have_conducted_busness_in_the_premises">In these Premises</label>
+                                                                <input type="text" name="how_long_have_conducted_busness_in_the_premises" id="how_long_have_conducted_busness_in_the_premises">
+                                                            </li>
+                                                            <li>
+                                                                <label for="how_long_have_conducted_busness_elsewhere">Elsewhere</label>
+                                                                <input type="text" name="how_long_have_conducted_busness_elsewhere" id="how_long_have_conducted_busness_elsewhere">
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                    <li>
+                                                        <label for="have_ever_suffered_loss_by_fire">Have you ever suffered loss by fire in these premises or elsewhere</label>
+                                                        <select name="have_previously_insured_against_fire" id="have_previously_insured_against_fire">
+                                                            <option value="" selected disabled>please select</option>
+                                                            <option value="true">True</option>
+                                                            <option value="false">False</option>
+                                                        </select>
+                                                        <label for="have_ever_suffered_loss_by_fire_details">If so, give details including names of insurers</label>
+                                                        <textarea name="have_ever_suffered_loss_by_fire_details" id="have_ever_suffered_loss_by_fire_details" style="width: 60%;"></textarea>
+                                                    </li>
+                                                    <li>
+                                                        <label for="have_ever_proposed_for_fire_insurance">Have you ever proposed for fire insurance and been declined or 
+                                                            renewal refused or had a policy cancelled by an insurance office</label>
+                                                        <select name="have_ever_proposed_for_fire_insurance" id="have_ever_proposed_for_fire_insurance">
+                                                            <option value="" selected disabled>please select</option>
+                                                            <option value="true">True</option>
+                                                            <option value="false">False</option>
+                                                        </select>
+                                                        <label for="have_ever_proposed_for_fire_insurance_details">If so, give details, including names and reasons</label>
+                                                        <textarea name="have_ever_proposed_for_fire_insurance_details" id="have_ever_proposed_for_fire_insurance_details" style="width: 60%;"></textarea>
+                                                    </li>
+                                                    <li>
+                                                        <label for="is_policy_to_be_to_or_held_by_creditors">Is this policy to be assigned to, or held by any creditors as collateral security</label>
+                                                        <select name="is_policy_to_be_to_or_held_by_creditors" id="is_policy_to_be_to_or_held_by_creditors">
+                                                            <option value="" selected disabled>please select</option>
+                                                            <option value="true">True</option>
+                                                            <option value="false">False</option>
+                                                        </select>
+                                                        <label for="is_policy_to_be_to_or_held_by_creditors_details"> If so, to whom? Give name in full.</label>
+                                                        <textarea name="is_policy_to_be_to_or_held_by_creditors_details" id="is_policy_to_be_to_or_held_by_creditors_details" style="width: 60%;"></textarea>
+                                                    </li>
+                                                    <li>
+                                                        <ol style="list-style:lower-alpha;">
+                                                            <li>
+                                                                <p > Do you keep a set of books showing a
+                                                                     complete record of business transacted, including all purchases
+                                                                     both for cash and credit 
+                                                                </p>
+                                                                <select name="do_you_keep_books_showing_record_of_business" id="do_you_keep_books_showing_record_of_business">
+                                                                    <option value="" selected disabled>please select</option>
+                                                                    <option value="true">True</option>
+                                                                    <option value="false">False</option>
+                                                                </select>                                                            
+                                                            </li>
+                                                            <li>
+                                                                <p> Are such books and records kept in a locked fireproof safe or removed
+                                                                     to another building at	 night or when the premises is not opened for business
+                                                                </p>
+                                                                <select name="are_such_books_kept_in_a_lock" id="are_such_books_kept_in_a_lock">
+                                                                    <option value="" selected disabled>please select</option>
+                                                                    <option value="true">True</option>
+                                                                    <option value="false">False</option>
+                                                                </select>       
+                                                                <div class="mt-4">
+                                                                    <p>
+                                                                        If you wish cover against any of these, please complete the supplementary
+                                                                         below by ticking where appropriate.      
+                                                                    </p>
+                                                                    <ol>
+                                                                        <li>
+                                                                           <p>Do you wish cover against</p> 
+                                                                           <ol style="list-style: lower-alpha;">
+                                                                                <li>
+                                                                                    <div class="row">
+                                                                                        <div class="col-3">
+                                                                                            <label for="is_explosion">Explosion</label>    
+                                                                                        </div>
+                                                                                        <div class="col-2">
+                                                                                            <input type="checkbox" name="is_explosion" id="is_explosion">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <div class="row">
+                                                                                        <div class="col-3">
+                                                                                            <label for="is_earthquake">Earthquake</label>    
+                                                                                        </div>
+                                                                                        <div class="col-2">
+                                                                                            <input type="checkbox" name="is_earthquake" id="is_earthquake">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <div class="row">
+                                                                                        <div class="col-3">
+                                                                                            <label for="is_aircraft">Aircraft</label>    
+                                                                                        </div>
+                                                                                        <div class="col-2">
+                                                                                            <input type="checkbox" name="is_aircraft" id="is_aircraft">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <div class="row">
+                                                                                        <div class="col-3">
+                                                                                            <label for="is_impact">Impact</label>    
+                                                                                        </div>
+                                                                                        <div class="col-2">
+                                                                                            <input type="checkbox" name="is_impact" id="is_impact">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <div class="row">
+                                                                                        <div class="col-3">
+                                                                                            <label for="is_storm_and_tempest">Storm and Tempest (subject to minimum 100/- excess)</label>    
+                                                                                        </div>
+                                                                                        <div class="col-2">
+                                                                                            <input type="checkbox" name="is_storm_and_tempest" id="is_storm_and_tempest">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <div class="row">
+                                                                                        <div class="col-3">
+                                                                                            <label for="is_flood">Flood (subject to minimum 100/- excess)</label>    
+                                                                                        </div>
+                                                                                        <div class="col-2">
+                                                                                            <input type="checkbox" name="is_flood" id="is_flood">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <div class="row">
+                                                                                        <div class="col-3">
+                                                                                            <label for="is_bursting_or_overflowing">
+                                                                                                Bursting or overflowing of water pipes and apparatus (subject to minimum 100/- excess)        
+                                                                                                Riot and Strikes</label>    
+                                                                                        </div>
+                                                                                        <div class="col-2">
+                                                                                            <input type="checkbox" name="is_bursting_or_overflowing" id="is_bursting_or_overflowing">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <div class="row">
+                                                                                        <div class="col-3">
+                                                                                            <label for="is_riot_and_strikes"> Riot and Strike</label>    
+                                                                                        </div>
+                                                                                        <div class="col-2">
+                                                                                            <input type="checkbox" name="is_riot_and_strikes" id="is_riot_and_strikes">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <div class="row">
+                                                                                        <div class="col-3">
+                                                                                            <p >Malicious Damage (If Riot and Strike cover is taken out)</p>    
+                                                                                        </div>
+                                                                                        <div class="col-2">
+                                                                                            <input type="checkbox" name="is_malicious_damage" id="is_malicious_damage">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </li>
+                                                                           </ol>
+                                                                        </li>
+                                                                    </ol>
+                                                                </div>                                                       
+                                                             </li>
+                                                        </ol>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li class="mt-3">
+                                                <label for="expected_premium">Expected Premium</label>
+                                                <input type="text" name="expected_premium" id="expected_premium"><br>
+                                                <label for="source_of_funds">Source of Funds</label>
+                                                <input type="text" name="source_of_funds" id="source_of_funds"><br>
+                                                <label for="bankers">Bankers</label>
+                                                <input type="text" name="bankers" id="bankers"><br>
+
                                             </li>
                                         </ol>
                                     </div>
-                                </div> 
+                                    <div class="mt-5">
+                                       
+                                        <h6>Declaration</h6>
+                                        <div class="ml-3">
+                                            <p>
+                                                I/We to the best interest of my/our knowledge hereby confirm that the statements contained in this proposal form are true 
+                                                and correct and I/We have not concealed, misrepresented or misstated any material fact. I/We agree that the statements and 
+                                                declaration contained in this proposal form shall be the contract of insurance with the company and are deemed to be incorporated in the contract.
+                                            </p>
+                                        </div>
+                                        <div class="mt-5 row">
+                                            <div class="col-sm-7">
+                                                <label for="proposersignature">Signature of Proposer</label>
+                                                <input type="file" name="proposersignature" id="proposersignature" >
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <label for="proposersignaturedate">Date</label>
+                                                <input type="date" name="proposersignaturedate" id="proposersignaturedate" >
+                                            </div>
+                                        </div>
+                                   </div>
+                                   <div class="mt-4">
+                                    <h6 class="mt-4">Please input these following documents:</h6>
+                                    <ol style="list-style: none;">
+                                        <li>
+                                            <label for="kycformfile">Complete KYC form</label>
+                                            <input type="file" name="kycformfile" id="kycformfile">
+                                        </li>
+                                        <li>
+                                            <span> <b>please provide Valid Means of Identification of 2 of the Board Members </b></span>
+                                            <ol style="list-style: none;">
+                                                <li>
+                                                    <span>Board of member1</span><br>
+                                                    <label for="member1meansofidentification">Means of Identification</label>
+                                                    <input type="file" name="member1meansofidentification" id="member1meansofidentification">
+                                                </li>
+                                                <li>
+                                                    <span>Board of member2</span><br>
+                                                    <label for="member2meansofidentification">Means of Identification</label>
+                                                    <input type="file" name="member2meansofidentification" id="member1meansofidentification">
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <label for="incorporationcertificate">Copy of Certificate of Incorporation </label>
+                                            <input type="file" name="incorporationcertificate" id="incorporationcertificate">
+                                        </li>
+                                        <li>
+                                            <label for="memoranddumorarticlecopy">Copy of Memorandum/Article of Association (details of the current shareholding structure must be included)</label>
+                                            <input type="file" name="memoranddumorarticlecopy" id="memoranddumorarticlecopy">
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="mt-3">
+                                    <h6 style="text-align: center;margin-bottom: 30px;">OFFICIAL USE ONLY</h6>
+                                    <label for="officer_name">Name of Officer</label>
+                                    <input type="text" name="officer_name" id="officer_name" class="nonoutlineinput"><br>                                   
+                                    <label for="sbu_hub_spoke">SBU/Hub/Spoke</label>
+                                    <input type="text" name="sbu_hub_spoke" id="sbu_hub_spoke" class="nonoutlineinput"><br>
+                                    <label for="rate_given">Rate Given</label>
+                                    <input type="text" name="rate_given" id="rate_given" class="nonoutlineinput"><br>
+                                    <label for="clientriskcategories">Client’s Risk Category</label>
+                                    <input type="text" name="clientriskcategories" id="clientriskcategories" class="nonoutlineinput"><br>
+                                    <label for="offical_use_date">Date</label>
+                                    <input type="date" name="offical_use_date" id="offical_use_date" style="width: 20%;">
+                                    
+                                </div>
                             </li>
                         </ol>
                     </div>
+                </div>
+                <div class="mt-4" style="text-align: center;">
+                    <button id="submitinfo" name="submitinfo" type="submit" class="btn btn-sm btn-primary">Submit</button>
                 </div>
             </form>
         </div>

@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Styles/site.css">
+    <title>Home Insurance Proposal Form</title>
+    <style>
+        .imgupload{
+            border: 2px solid black;
+            width: 80%;
+            height: 230px;
+            text-align: center;
+        }
+        .uploadedimg{
+            width: 90%;
+            height:150px ;
+        }
+    </style>
+    <script>
+        var loadFile = function(event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
+</head>
+<body>
+    <div class="container risk_container">
+        <div class="risk_inner">
+            <form>
+                <div class="about">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h6>Impotant Information</h6>
+                            <ol>
+                                <li>
+                                    <p>
+                                        AN INDIVIDUAL WHO ASSISTS AN APPLICANT TO COMPLETE AN APPLICATION OR  PROPOSAL FORM FOR
+                                        INSURANCE SHALL BE DEEMED TO HAVE DONE SO AS THE AGENT OF THE APPLICANT IN ACCORDANCE
+                                        WITH SECTION 54(2), INSURANCE ACT, 2003
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        . THE LIABILITY OF THE COMPANY DOES NOT COMMENCE UNTIL THIS APPLICATION IS ACCEPTED AND THE    
+                                          PREMIUM IS PAID IN ACCORDANCE WITH SECTION 50(1) OF INSURANCE ACT 2003
+                                    </p>
+                                    <p>
+                                        “AN INDIVIDUAL WHO ASSISTS AN APPLICANT TO COMPLETE THIS PROPOSAL FORM FOR INSURANCE SHALL BE DEEMED
+                                         TO HAVE DONE SO AS THE AGENT OF THE APPLICANT”
+                                    </p>
+                                    <p style="font-size: small;">
+                                        This policy covers the insured against damage to his/her building in the event of Fire and Applied perils. It also injures the client against loss of contents due to theft, burglary, fire and acts of nature like storms and floods. Moveable property such as laptops, mobile phones, jewellery,
+                                         camera equipment and sporting equipment are also covered under this policy
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="imgupload">
+                                <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+                                <p ><label for="file" style="cursor: pointer;">Affix recent photographs</label></p>
+                                <p><img id="output" class="uploadedimg" /></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="insurediv mt-3">
+                        <div>
+                            <h6>PROPOSER’S PERSONAL DETAIL</h6>
+                            <ol class="insureinputlist">
+                                <li>
+                                    <label for="proposer_surname"> Surname</label>
+                                    <input type="text" name="proposer_surname" id="proposer_surname"> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="proposer_mothers_maiden_name"> Mother’s Maiden Name</label>
+                                    <input type="text" name="proposer_mothers_maiden_name" id="proposer_mothers_maiden_name"> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="proposer_firstname"> First Name</label>
+                                    <input type="text" name="proposer_firstname" id="proposer_firstname"> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="proposer_othernames"> Other Names</label>
+                                    <input type="text" name="proposer_othernames" id="proposer_othernames"> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="proposer_title"> Title</label>
+                                    <select name="proposer_title" id="proposer_title">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="Mr">Mr</option>
+                                        <option value="Mrs">Mrs</option>
+                                        <option value="Miss">Miss</option>
+                                    </select>
+                                    <label class="ml-2" for="proposer_othertitle">Other</label>
+                                    <input type="text" name="proposer_othertitle" id="proposer_othertitle"> 
+                                </li>
+                                 <li class="mt-3">
+                                    <label for="proposer_dateofbirth"> Date of Birth</label>
+                                    <input type="date" name="proposer_dateofbirth" id="proposer_dateofbirth"> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="proposer_officeaddress"> Office Address</label>
+                                    <input type="text" name="proposer_officeaddress" id="proposer_officeaddress"> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="proposer_residentialaddress"> Residential Address</label>
+                                    <input type="text" name="proposer_residentialaddress" id="proposer_residentialaddress"> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="proposer_residentialtown_or_city"> Residential Town/City</label>
+                                    <input type="text" name="proposer_residentialtown_or_city" id="proposer_residentialtown_or_city"> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="proposer_local_govt"> 	Local Government Area</label>
+                                    <input type="text" name="proposer_local_govt" id="proposer_local_govt"> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="proposer_country"> Country</label>
+                                    <input type="text" name="proposer_country" id="proposer_country"> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="proposer_nationality"> Nationality</label>
+                                    <input type="text" name="proposer_nationality" id="proposer_nationality"> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="proposer_state_of_origin"> State of Origin</label>
+                                    <input type="text" name="proposer_state_of_origin" id="proposer_state_of_origin"> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="proposer_bvn"> BVN</label>
+                                    <input type="text" name="proposer_bvn" id="proposer_bvn"> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="proposer_prefered_address"> Preferred Correspondence Address</label>
+                                    <select name="proposer_prefered_address" id="proposer_prefered_address">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="Residential">Residential</option>
+                                        <option value="Office">Office</option>
+                                    </select>
+                                    <label for="proposer_prefered_address_nationality">Nationality</label>
+                                    <input type="text" name="proposer_prefered_address_nationality" id="proposer_prefered_address_nationality"> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="proposer_office_telephone"> Telephone No: Office</label>
+                                    <input type="text" name="proposer_office_telephone" id="proposer_office_telephone"> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="proposer_mobile_no"> Mobile</label>
+                                    <input type="text" name="proposer_mobile_no" id="proposer_mobile_no"> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="proposer_email"> EMail</label>
+                                    <input type="text" name="proposer_email" id="proposer_email"> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="proposer_marital_status"> Marital Status</label>
+                                    <select  name="proposer_marital_status" id="proposer_marital_status">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="Single">Single</option>
+                                        <option value="Married">Married</option>
+                                        <option value="Divorced">Divorced</option>
+                                        <option value="Widowed">Widowed</option>
+                                    </select> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="proposer_gender"> Gender</label>
+                                    <select  name="proposer_gender" id="proposer_gender">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="proposer_employment_status"> Employment Status</label>
+                                    <select  name="proposer_employment_status" id="proposer_employment_status">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="Self_Employed">Self_Employed</option>
+                                        <option value="Partnership">Partnership</option>
+                                        <option value="Civil-Servant">Civil Servant</option>
+                                        <option value="Private_Sector_Employee">Private Sector Employee</option>
+                                    </select> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="annualincome">ANNUAL INCOME BAND (NGN):</label>
+                                     <div>
+                                         <ol style="list-style: none;">
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <label for="is1mto2m">1m-2m</label>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <input type="checkbox" name="is1mto2m" id="is1mto2m">
+                                                    </div>
+                                                 </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <label for="is2mto5m">2m-5m</label>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <input type="checkbox" name="is2mto5m" id="is2mto5m">
+                                                    </div>
+                                                 </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <label for="is5mto10m">5m-10m</label>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <input type="checkbox" name="is5mto10m" id="is5mto10m">
+                                                    </div>
+                                                 </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <label for="is10mto15m">10m-15m</label>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <input type="checkbox" name="is10mto15m" id="is10mto15m">
+                                                    </div>
+                                                 </div>
+                                            </li>                                         </ol>
+                                     </div>    
+                                </li> 
+                                <li class="mt-3">
+                                    <label for="proposer_facebook_id"> Facebook  ID</label>
+                                    <input type="text" name="proposer_facebook_id" id="proposer_facebook_id"> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="proposer_linkedin_id"> Linkedin  ID</label>
+                                    <input type="text" name="proposer_linkedin_id" id="proposer_linkedin_id"> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="means_of_identifacation">MEANS OF IDENTIFICATION</label>
+                                    <select name="means_of_identifacation" id="means_of_identifacation">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="nationalid">NATIONAL ID</option>
+                                        <option value="driverslicense">DRIVER's LICENSE</option>
+                                        <option value="intlpassport">INT'L PASSPORT</option>
+                                        <option value="voterscard">VOTERS CARD</option>
+                                    </select>
+                                    <label for="means_of_identifacation_others">Others</label>  
+                                    <input type="text" name="means_of_identifacation_others" id="means_of_identifacation_others" style="width: 30%;">                              
+                                </li> 
+                                <li class="mt-3">
+                                    <label for="country_of_issue">ID Country Of Issue</label>
+                                    <input type="text" name="issuingathority" id="issuingathority"> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="issuingathority">ISSUING AUTHORITY</label>
+                                    <input type="text" name="country_of_issue" id="country_of_issue"> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="dateofissue">DATE OF ISSUE</label>
+                                    <input type="date" name="issuingathority" id="issuingathority"> 
+                                </li>
+                                <li class="mt-3">
+                                    <label for="dateofissueexpiry">DATE OF EXPIRY</label>
+                                    <input type="date" name="dateofissueexpiry" id="dateofissueexpiry"> 
+                                </li> 
+                                <li class="mt-3">
+                                    <label for="residentpermitfornonnigeria">RESIDENT PERMIT (FOR NON NIGERIANS):</label>
+                                    <input type="text" name="residentpermitfornonnigeria" id="residentpermitfornonnigeria"> 
+                                </li> 
+                                <li class="mt-3">
+                                    <label for="physical_report_height">PHYSICAL DESCRIPTION: HEIGHT </label>
+                                    <input type="text" name="physical_report_height" id="physical_report_height" style="width: inherit;">
+                                    <label for="physical_report_weight">WEIGHT (IN KG)</label>
+                                    <input type="text" name="physical_report_weight" id="physical_report_weight" style="width: inherit;">
+                                </li>
+                                <li class="mt-3">
+                                    <p class="ml-4" >I Will Like To Receive My Policy Document Via</p>
+                                    <ol style="list-style: none;">
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <label for="email_method_policy_document_submision">Email(soft copy)</label>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <input type="checkbox" name="email_method_policy_document_submision" id="email_method_policy_document_submision">
+                                                </div>
+                                             </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <label for="courier_method_policy_document_submission">Courier</label>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <input type="checkbox" name="courier_method_policy_document_submission" id="courier_method_policy_document_submission">
+                                                </div>
+                                             </div>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+                            <ol class="insureinputlist mt-4">
+                                <h6>RISK APPRAISAL CONSTRUCTION</h6>
+                                <li class="mt-3">
+                                    <label for="house_type">House Type</label>
+                                    <select name="house_type" id="house_type">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="Detached">Detached</option>
+                                        <option value="Semi-Detached">Semi-Detached</option>
+                                        <option value="Terraced">Terraced</option>
+                                        <option value="Bungalow">Bungalow</option>
+                                        <option value="Flat">Flat</option>
+                                        <option value="Guest">Guest House</option>
+                                    </select>
+                                </li>
+                                <li class="mt-3">
+                                    <label for="number_of_bedrooms">Number of Bedrooms</label>
+                                    <input type="text" name="number_of_bedrooms" id="number_of_bedrooms">
+                                </li>
+                                <li class="mt-3">
+                                    <label for="number_of_bedrooms">Number of Bedrooms</label>
+                                    <input type="text" name="number_of_bedrooms" id="number_of_bedrooms">
+                                </li>
+                                <li class="mt-3">
+                                    <label for="number_of_storeys">Number of Storey's</label>
+                                    <input type="text" name="number_of_storeys" id="number_of_storeys">
+                                </li>
+                                <li class="mt-3">
+                                    <label for="where_is_floor_situated">On Which Floor Is Flat/Apartment Situated</label>
+                                    <input type="text" name="where_is_floor_situated" id="where_is_floor_situated">
+                                </li>
+                                <li class="mt-3">
+                                    <label for="year_of_construction">Year of Construction</label>
+                                    <input type="text" name="year_of_construction" id="year_of_construction">
+                                </li>
+                                <li class="mt-3">
+                                    <label for="what_is_d_dwelling_built_of">What Is The Dwelling Built Of</label>
+                                    <select name="what_is_d_dwelling_built_of" id="what_is_d_dwelling_built_of">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="Brick">Brick</option>
+                                        <option value="Stone">Stone</option>
+                                        <option value="Concrete">Concrete</option>
+                                        <option value="Bungalow">Bungalow</option>
+                                        <option value="Flat">Flat</option>
+                                        <option value="Guest">Guest House</option>
+                                    </select>
+                                </li>
+                                <li class="mt-3">
+                                    
+                                    <label for="what_is_d_dwelling_roofted_with">What Is The Dwelling Roofed With</label>
+                                    <select name="what_is_d_dwelling_roofted_with" id="what_is_d_dwelling_roofted_with">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="States">States</option>
+                                        <option value="Tiles">Tiles</option>
+                                        <option value="Concrete">Concrete</option>
+                                    </select>
+                                </li>
+                                <li class="mt-3">
+                                    <label for="state_if_dwelling_is_roofted_with_felt_on_timber">Please state if any part of the dwelling is roofed with felt on timber</label>
+                                    <input type="text" name="state_if_dwelling_is_roofted_with_felt_on_timber" id="state_if_dwelling_is_roofted_with_felt_on_timber">
+                                </li>
+                                <li class="mt-3">
+                                    <label for="is_premises_in_good_repair">Is the premises in good repair</label>
+                                    <select name="is_premises_in_good_repair" id="is_premises_in_good_repair">
+                                        <option value="" selected disabled>please select</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                </li>
+                            </ol>
+                            <ol class="insureinputlist mt-4">
+                                <h6>OCCUPANCY</h6>
+                                <li class="mt-3">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label for="is_the_house_fuly_owner_occupied">Is the house fully owner-occupied</label>
+                                        </div>
+                                        <div class="col-6">
+                                            <select name="is_the_house_fuly_owner_occupied" id="is_the_house_fuly_owner_occupied">
+                                                <option value="" selected disabled>please select</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select><br>
+                                            <label for="is_the_house_fuly_owner_occupied_details">If no, please provide details</label><br>
+                                            <textarea name="is_the_house_fuly_owner_occupied_details" id="is_the_house_fuly_owner_occupied_details" style="width: 100%;"></textarea>
+                                        </div>
+                                </li>
+                                <li class="mt-3">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label for="is_any_premises_part_used_for_business">Is any part of the premises used for business or professional purposes</label>
+                                        </div>
+                                        <div class="col-6">
+                                            <select name="is_any_premises_part_used_for_business" id="is_any_premises_part_used_for_business">
+                                                <option value="" selected disabled>please select</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select><br>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mt-3">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label for="is_any_premises_part_used_for_business">Is any part of the premises let or sublet</label>
+                                        </div>
+                                        <div class="col-6">
+                                            <select name="is_any_premises_part_used_for_business" id="is_any_premises_part_used_for_business">
+                                                <option value="" selected disabled>please select</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select><br>
+                                            <label for="is_the_house_fuly_owner_occupied_details">If yes, how many tenants</label><br>
+                                            <input type="text" name="is_the_house_fuly_owner_occupied_details" id="is_the_house_fuly_owner_occupied_details" style="width: 100%;">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mt-3">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label for="do_you_provide_accommodation_for_guest">Do you provide accommodation for paying guest</label>
+                                        </div>
+                                        <div class="col-6">
+                                            <select name="do_you_provide_accommodation_for_guest" id="do_you_provide_accommodation_for_guest">
+                                                <option value="" selected disabled>please select</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select><br>
+                                            <label for="do_you_provide_accommodation_for_guest_details">If yes, how many</label><br>
+                                            <input type="text" name="do_you_provide_accommodation_for_guest_details" id="do_you_provide_accommodation_for_guest_details" style="width: 100%;">
+                                        </div>
+                                    </div>
+                                </li>
+                                 <li class="mt-3">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label for="is_dwelling_left_unocupied_during_night">Is the dwelling left unoccupied regularly during the day or night</label>
+                                        </div>
+                                        <div class="col-6">
+                                            <select name="is_dwelling_left_unocupied_during_night" id="is_dwelling_left_unocupied_during_night">
+                                                <option value="" selected disabled>please select</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select><br>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mt-3">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label for="is_dwelling_left_unocupied_more_than_30_days">Is the dwelling left unoccupied for more than 30 consecutive days in any one period</label>
+                                        </div>
+                                        <div class="col-6">
+                                            <select name="is_dwelling_left_unocupied_more_than_30_days" id="is_dwelling_left_unocupied_more_than_30_days">
+                                                <option value="" selected disabled>please select</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select><br>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mt-3">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label for="is_premises_exposed_storm">Is the premises particularly exposed to damage by storm, flood, subsidence or landslip</label>
+                                        </div>
+                                        <div class="col-6">
+                                            <select name="is_premises_exposed_storm" id="is_premises_exposed_storm">
+                                                <option value="" selected disabled>please select</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select><br>
+                                            <label for="is_premises_exposed_storm_details">If the answer to any of the above is yes, please provide details</label>
+                                            <textarea name="is_premises_exposed_storm_details" id="is_premises_exposed_storm_details" style="width:inherit;"></textarea>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                            <ol>
+                                <h6>SECURITY</h6>
+                                <li class="mt-3">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <label for="are_doors_fitted_with_keylocks">Are the doors fitted with key-operated security locks</label>
+                                        </div>
+                                        <div class="col-4">
+                                            <select name="are_doors_fitted_with_keylocks" id="are_doors_fitted_with_keylocks">
+                                                <option value="" selected disabled>please select</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select><br>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mt-3">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <label for="are_doors_fitted_with_keylocks">Are the doors fitted with key-operated security locks</label>
+                                        </div>
+                                        <div class="col-4">
+                                            <select name="are_doors_fitted_with_keylocks" id="are_doors_fitted_with_keylocks">
+                                                <option value="" selected disabled>please select</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select><br>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mt-3">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <label for="are_windows_fitted_with_locks">Are all accessible windows fitted with locks</label>
+                                        </div>
+                                        <div class="col-4">
+                                            <select name="are_windows_fitted_with_locks" id="are_windows_fitted_with_locks">
+                                                <option value="" selected disabled>please select</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select><br>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mt-3">
+                                    <p class="ml-4">Is the dwelling fitted with the following</p>
+                                    <ol style="list-style: none;">
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <label for="is_dwelling_fith_with_firextinguisher">Fire Extinguisher</label>
+                                                </div>
+                                                <div class="col-4">
+                                                    <select name="is_dwelling_fith_with_firextinguisher" id="is_dwelling_fith_with_firextinguisher">
+                                                        <option value="" selected disabled>please select</option>
+                                                        <option value="Yes">Yes</option>
+                                                        <option value="No">No</option>
+                                                    </select><br>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <label for="is_dwelling_fith_with_intruderalarm"> Intruder Alarm</label>
+                                                </div>
+                                                <div class="col-4">
+                                                    <select name="is_dwelling_fith_with_intruderalarm" id="is_dwelling_fith_with_intruderalarm">
+                                                        <option value="" selected disabled>please select</option>
+                                                        <option value="Yes">Yes</option>
+                                                        <option value="No">No</option>
+                                                    </select><br> 
+                                                </div>
+                                            </div>
+                                         </li>
+                                         <li>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <label for="is_dwelling_fith_with_smokedetector">Smoke Detector</label>
+                                                </div>
+                                                <div class="col-4">
+                                                    <select name="is_dwelling_fith_with_smokedetector" id="is_dwelling_fith_with_smokedetector">
+                                                        <option value="" selected disabled>please select</option>
+                                                        <option value="Yes">Yes</option>
+                                                        <option value="No">No</option>
+                                                    </select><br>
+                                                </div>
+                                            </div>
+                                         </li>
+                                         <li>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <label for="is_dwelling_fith_with_thunderarrestor">Thunder Arrestor</label>
+                                                </div>
+                                                <div class="col-4">
+                                                    <select name="is_dwelling_fith_with_thunderarrestor" id="is_dwelling_fith_with_thunderarrestor">
+                                                        <option value="" selected disabled>please select</option>
+                                                        <option value="Yes">Yes</option>
+                                                        <option value="No">No</option>
+                                                    </select><br>
+                                                </div>
+                                            </div>
+                                         </li>
+                                    </ol>
+                                </li>
+                            </ol>
+                            <!-- <li class="mt-3"> -->
+                            <ol style="list-style: none; list-style-position: outside;">
+                                <h6>PROPERTY TO BE INSURED</h6>
+                                <li>
+                                    <label for="value_of_building">Value of the building: NGN</label>
+                                    <input type="text" name="value_of_building" id="value_of_building">
+                                </li>
+                                <li class="mt-3">
+                                    <label for="value_of_contents">Value of contents: NGN(please attached inventory sheet)</label>
+                                    <input type="text" name="value_of_contents" id="value_of_contents">
+                                    <input type="file" name="value_of_contents_file" id="value_of_contents_file">
+                                </li>
+                                <li class="mt-3">
+                                    <label for="valuable_items">Valuable items</label>
+                                    <input type="text" name="valuable_items" id="valuable_items">
+                                    <input type="file" name="valuable_items_file" id="valuable_items_file">
+                                </li>
+                                <li class="mt-3">
+                                    <label for="cover_to_commence_from"> Cover to commence from  </label>
+                                    <input type="date" style="width: inherit;"  name="cover_to_commence_from" id="cover_to_commence_from"> 
+                                    <label for="cover_to_commence_to">TO </label>
+                                    <input type="date"style="width: inherit;" name="cover_to_commence_to" id="cover_to_commence_to"> 
+                                </li>
+                            </ol>
+                            <ol style="list-style: none;">
+                                <h6>General Question</h6>
+                                <li class="mt-3">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <label for="have_you_been_insured_for_risk">Have you been insured for the risk proposed in the past five years</label>
+                                        </div>
+                                        <div class="col-4">
+                                            <select name="have_you_been_insured_for_risk" id="have_you_been_insured_for_risk">
+                                                <option value="" selected disabled>please select</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select><br>
+                                            <label for="name_of_insurer">If yes, please provide the name of the insurer</label>
+                                            <input type="text" name="name_of_insurer" id="name_of_insurer">
+                                        </div>
+                                    </div>
+                                </li> 
+                                <li class="mt-3">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <label for="have_insurances_been_declined">Have you had any insurances declined, cancelled or made subject to special conditions</label>
+                                        </div>
+                                        <div class="col-4">
+                                            <select name="have_insurances_been_declined" id="have_insurances_been_declined">
+                                                <option value="" selected disabled>please select</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select><br>
+                                        </div>
+                                    </div>
+                                </li> 
+                                <li class="mt-3">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <label for="have_you_made_any_claims">Have you made any claims, suffered any loss(es), whether insured or not in the past five years</label>
+                                        </div>
+                                        <div class="col-4">
+                                            <select name="have_you_made_any_claims" id="have_you_made_any_claims">
+                                                <option value="" selected disabled>please select</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select><br>
+                                            <label for="have_you_made_any_claims_details">If the answer is yes to any of the above questions, please provide details</label>
+                                            <input type="text" name="have_you_made_any_claims_details" id="have_you_made_any_claims_details">
+                                        </div>
+                                    </div>
+                                </li> 
+                                <li class="mt-3">
+                                    <h6>If you have any of the following insurances with ALLIANZ NIGERIA INSURANCE PLC, please state policy number:</h6>
+                                    <h6>
+                                        please input a tabled list of all insurances policy number with the following headers
+                                    </h6>
+                                    <ol>
+                                        <li class="mt-3">
+                                            <h6><b>PRIVATE MOTOR</b></h6>
+                                        </li>
+                                        <li class="mt-3">
+                                            <h6><b>COMMERCIAL VEHICLE</b></h6>
+                                        </li>
+                                        <li class="mt-3">
+                                            <h6><b>LIFE EDUCATION</b></h6>
+                                        </li>
+                                        <li class="mt-3">
+                                            <h6><b>OTHERS </b></h6>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+                                <!-- </li> -->
+                        </div>
+                        <hr>
+                    <div>
+                        <h6><b>Declaration</b></h6>
+                        <p>                      
+                            I,<input type="text" name="declarant_name" id="declarant_name" class="nonoutlineinput"> declare and warrant that the above information in this application,
+                             and in all documents submitted to ALLIANZ NIGERIA INSURANCE PLC in connection with this application, whether in own handwriting or not, is true, correct and complete and will
+                             form the basis of the proposed contract. I agree that if any material information concerning the risk
+                              on the life/lives insured has not been fully disclosed, or if I have given any untrue, incorrect or incomplete answers, ALLIANZ NIGERIA INSURANCE PLC reserves the right to cancel
+                               my cover and I shall forfeit all premiums paid.
+                        </p>
+                        <p>
+                            I irrevocably authorize and request any Doctor or other person who may be
+                             in possession of, or hereafter acquire any information concerning my health to disclose
+                             such information to ALLIANZ NIGERIA INSURANCE PLC.
+                        </p>
+                        <p>
+                            I/We agree to accept a policy in the
+                             Company’s usual form for this class of insurance
+                        </p>
+                        <p><b>RESTRICTIONS, WAR AND KINDRED RISKS</b></p>
+                        <p>
+                            It is agreed and expressly understood that should the death of the life
+                             assured occur directly or indirectly from his/her engaging in or taking 
+                             part in riot or strike, civil commotion, insurrection,
+                              war (whether war be declared or not) or any act incidental 
+                              thereto, the total amount payable under this policy shall be limited to
+                               the total amount of the premiums actually paid under the
+                                policy (less all extra premiums and any amount already paid by the
+                                 company under the policy) together with compound interest on the premiums so
+                                  paid to the date of the death of the life assured, at the rate to be determined
+                                   by the company provided always that the total amount so payable under the
+                             policy shall not be more than the value of the sum assured.
+                             The Assurer shall not recognise any claim arising from any medical impairment or condition of 
+                             a Life Assured which occurred or which was diagnosed prior to commencement 
+                             of the term of assurance under this Policy, or within six (6) months of such
+                              commencement.
+                        </p>
+                    </div>
+                    <div class="mt-5 row">
+                        <div class="col-lg-3 mt-3">
+                            <label for="name_of_witness">Name of Witness</label>
+                            <input type="text" name="name_of_witness" id="name_of_witness" >
+                        </div>
+                        <div class="col-lg-3 mt-3">
+                            <label for="applicant_signature">Applicant’s Signature</label>
+                            <input type="file" name="applicant_signature" id="applicant_signature" >
+                        </div>
+                        <div class="col-lg-3 mt-3">
+                            <label for="applicant_signature_date">Date</label><br>
+                            <input type="date" name="applicant_signature_date" id="applicant_signature_signature_date" >
+                        </div>
+                        <div class="col-lg-3 mt-3">
+                            <label for="applicant_address">Address</label>
+                            <input type="text" name="applicant_address" id="applicant_address" >
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <h6 style="text-align: center;"><b>Official Use Only</b></h6>
+                        <label for="name_of_officer">Name of Officer</label>
+                        <input type="text" name="name_of_officer" id="name_of_officer" class="nonoutlineinput"><br>
+                        <label for="sbu">SBU</label>
+                        <input type="text" name="sbu" id="sbu" class="nonoutlineinput"><br>
+                        <label for="premium">Premium</label>
+                        <input type="text" name="premium" id="premium"class="nonoutlineinput" ><br>
+                        <label for="rate">Rate</label>
+                        <input type="text" name="rate" id="rate" class="nonoutlineinput"><br>
+                        <label for="information">Any additional Information</label>
+                        <input type="text" name="information" id="information" class="nonoutlineinput" style="width: 60%;">
+                        <div class="row">
+                            <div class="col-lg-6 mt-3">
+                                <label for="official_signature">Signature</label>
+                                <input type="file" name="official_signature" id="official_signature" >
+                            </div>
+                            <div class="col-lg-6 mt-3">
+                                <label for="official_signature_date">Date</label>
+                                <input type="date" name="official_signature_date" id="official_signature_date" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4" style="text-align: center;">
+                    <button id="submitinfo" name="submitinfo" type="submit" class="btn btn-sm btn-primary">Submit</button>
+                </div>
+            </form>
+      </div>
+    </div>
+</body>
+</html>

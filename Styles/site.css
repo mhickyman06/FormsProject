@@ -19,6 +19,10 @@
     /* width: 20%; */
     font-size: 13px;
 }
+textarea{
+    margin-left: 20px;
+    height: 70px;
+}
 .risk_container{
     margin:30px 100px 50px 170px;
     width: 70%;
