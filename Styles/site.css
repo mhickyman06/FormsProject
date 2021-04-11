@@ -45,6 +45,9 @@ textarea{
     font-family: 'Calibri', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-weight: bold;
 }
+input{
+    width: inherit;
+}
 .insurediv {
     font-family: 'Calibri', 'Gill Sans MT', 'Trebuchet MS', sans-serif, helvetica, sans-serif, Georgia, Times, 'Times New Roman', serif;
     font-size: 14px;
@@ -59,6 +62,15 @@ textarea{
     list-style: lower-alpha;
 }
 
+.signature_upload{
+    width: inherit;    
+    height: 80px;
+}
+.signature_img{
+    width: inherit;
+    height:80px ;
+}
+
  ol li > label{
     margin-left: 30px;
 }
@@ -69,5 +81,10 @@ ol li > input{
 @media screen and (max-width: 730px) {
     .risk_container {
         margin-left: 70px;
+    }
+}
+@media screen and (max-width: 466px) {
+    ol{
+        padding-left: 0;
     }
 }
